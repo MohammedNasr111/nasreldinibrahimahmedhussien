@@ -12,7 +12,7 @@
     "preview": "node node_modules/vite/bin/vite.js preview"
   },
   "engines": {
-    "node": ">=18"
+    "node": "20.x"
   },
   "dependencies": {
     "@vercel/blob": "^0.27.0",
