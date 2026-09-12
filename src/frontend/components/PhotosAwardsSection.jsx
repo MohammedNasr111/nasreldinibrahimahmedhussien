@@ -22,14 +22,14 @@ export default function PhotosAwardsSection({ data, driveAssets }) {
   const awardImageRef = useRef(null);
   const photosFolderUrl = resolveSectionFolderUrl(driveAssets, 'photos');
   const awardsFolderUrl = resolveSectionFolderUrl(driveAssets, 'awards');
-
-  const visiblePhotos = data.photos.filter((p) => resolvePhotoUrl(p) || isEditor);
+  const photos = data?.photos ?? [];
+  const awards = data?.awards ?? [];
 
   useEffect(() => {
     if (tab !== 'photos') return undefined;
     lightboxRef.current = GLightbox({ selector: '.glightbox' });
     return () => lightboxRef.current?.destroy();
-  }, [visiblePhotos, tab]);
+  }, [photos, tab]);
 
   const updateField = (field, value) => {
     updateContent((prev) => ({
@@ -59,9 +59,9 @@ export default function PhotosAwardsSection({ data, driveAssets }) {
 
   const updatePhoto = (index, photo) => {
     updateContent((prev) => {
-      const photos = [...prev.photosAwards.photos];
-      photos[index] = photo;
-      return { ...prev, photosAwards: { ...prev.photosAwards, photos } };
+      const nextPhotos = [...prev.photosAwards.photos];
+      nextPhotos[index] = photo;
+      return { ...prev, photosAwards: { ...prev.photosAwards, photos: nextPhotos } };
     });
   };
 
@@ -94,9 +94,9 @@ export default function PhotosAwardsSection({ data, driveAssets }) {
 
   const updateAward = (index, award) => {
     updateContent((prev) => {
-      const awards = [...prev.photosAwards.awards];
-      awards[index] = award;
-      return { ...prev, photosAwards: { ...prev.photosAwards, awards } };
+      const nextAwards = [...prev.photosAwards.awards];
+      nextAwards[index] = award;
+      return { ...prev, photosAwards: { ...prev.photosAwards, awards: nextAwards } };
     });
   };
 
@@ -152,12 +152,11 @@ export default function PhotosAwardsSection({ data, driveAssets }) {
           />
 
           <div className="photo-gallery">
-            {data.photos.map((photo, i) => {
+            {photos.map((photo, i) => {
               const photoSrc = resolvePhotoUrl(photo);
-              if (!photoSrc && !isEditor) return null;
 
               return (
-                <figure key={photo.id} className="gallery-item">
+                <figure key={photo.id || `photo-${i}`} className="gallery-item">
                   {photoSrc && !isEditor ? (
                     <a href={photoSrc} className="glightbox" data-gallery="photos">
                       <img src={photoSrc} alt={photo.caption || 'Gallery photo'} />
@@ -170,7 +169,19 @@ export default function PhotosAwardsSection({ data, driveAssets }) {
                       onRemove={() => updatePhoto(i, { ...photo, url: null, driveFileId: '' })}
                     />
                   ) : (
-                    <div className="pub-cover-placeholder">🖼️</div>
+                    <div className="gallery-placeholder">
+                      <div className="pub-cover-placeholder">🖼️</div>
+                      {!isEditor && (
+                        <a
+                          href={photosFolderUrl}
+                          className="btn-outline-gold btn-sm gallery-drive-link"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Browse on Google Drive
+                        </a>
+                      )}
+                    </div>
                   )}
                   <EditableText
                     tag="figcaption"
@@ -185,9 +196,10 @@ export default function PhotosAwardsSection({ data, driveAssets }) {
             })}
           </div>
 
-          {!isEditor && visiblePhotos.length === 0 && photosFolderUrl && (
+          {photos.length === 0 && !isEditor && (
             <p className="empty-state" dir="rtl" lang="ar">
-              <a href={photosFolderUrl} target="_blank" rel="noopener noreferrer">عرض الصور على Google Drive</a>
+              لا توجد صور —{' '}
+              <a href={photosFolderUrl} target="_blank" rel="noopener noreferrer">عرض على Google Drive</a>
             </p>
           )}
 
@@ -210,11 +222,11 @@ export default function PhotosAwardsSection({ data, driveAssets }) {
           />
 
           <div className="awards-grid awards-grid-2col">
-            {data.awards.map((award, i) => {
+            {awards.map((award, i) => {
               const awardSrc = resolveImageUrl(award.image, award.imageDriveFileId);
 
               return (
-                <article key={award.id} className="award-card award-card-gold">
+                <article key={award.id || `award-${i}`} className="award-card award-card-gold">
                   {awardSrc ? (
                     <div className="award-image-wrap">
                       <EditableImage
@@ -244,20 +256,21 @@ export default function PhotosAwardsSection({ data, driveAssets }) {
                       value={award.body}
                       onChange={(v) => updateAward(i, { ...award, body: v })}
                     />
-                    {award.year && (
-                      <EditableText
-                        tag="p"
-                        className="award-year"
-                        dir="ltr"
-                        value={award.year}
-                        onChange={(v) => updateAward(i, { ...award, year: v })}
-                      />
-                    )}
-                    {!awardSrc && awardsFolderUrl && (
-                      <a href={awardsFolderUrl} className="btn-outline-gold btn-sm" target="_blank" rel="noopener noreferrer">
-                        Browse on Google Drive
-                      </a>
-                    )}
+                    <EditableText
+                      tag="p"
+                      className="award-year"
+                      dir="ltr"
+                      value={award.year || ''}
+                      onChange={(v) => updateAward(i, { ...award, year: v })}
+                    />
+                    <a
+                      href={awardsFolderUrl}
+                      className="btn-outline-gold btn-sm"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {awardSrc ? 'View on Google Drive' : 'Browse on Google Drive'}
+                    </a>
                   </div>
                   {isEditor && (
                     <div className="award-edit-actions">
@@ -281,7 +294,7 @@ export default function PhotosAwardsSection({ data, driveAssets }) {
                 </article>
               );
             })}
-            {data.awards.length === 0 && !isEditor && (
+            {awards.length === 0 && !isEditor && (
               <p className="empty-state" dir="rtl" lang="ar">لا توجد جوائز مسجلة حتى الآن.</p>
             )}
           </div>

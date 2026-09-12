@@ -4,13 +4,13 @@ import DriveFolderBanner from './DriveFolderBanner';
 import { useAuth } from '../hooks/useAuth';
 import { useContent } from '../hooks/useContent';
 import { uploadFile, uid } from '../utils/api';
-import { resolvePdfUrl, resolveSectionFolderUrl } from '../utils/driveUrls';
+import { resolvePdfOrFolderUrl, resolveSectionFolderUrl } from '../utils/driveUrls';
 
-function ConferenceCard({ item, onUpdate, onRemove, folderUrl }) {
+function ConferenceCard({ item, onUpdate, onRemove, folderUrl, driveAssets }) {
   const { isEditor } = useAuth();
   const { showToast } = useContent();
   const pdfRef = useRef(null);
-  const pdfUrl = resolvePdfUrl(item.pdf);
+  const { url: linkUrl, isDirectFile } = resolvePdfOrFolderUrl(item.pdf, folderUrl, driveAssets);
 
   const handlePdf = async (e) => {
     const file = e.target.files?.[0];
@@ -58,25 +58,17 @@ function ConferenceCard({ item, onUpdate, onRemove, folderUrl }) {
           value={item.location || ''}
           onChange={(v) => onUpdate({ ...item, location: v })}
         />
-        {item.paperTitle && (
-          <EditableText
-            tag="p"
-            className="conf-paper"
-            dir="rtl"
-            lang="ar"
-            value={item.paperTitle}
-            onChange={(v) => onUpdate({ ...item, paperTitle: v })}
-          />
-        )}
-        {pdfUrl ? (
-          <a href={pdfUrl} className="btn-outline-gold btn-sm" target="_blank" rel="noopener noreferrer">
-            Download Paper
-          </a>
-        ) : folderUrl ? (
-          <a href={folderUrl} className="btn-outline-gold btn-sm" target="_blank" rel="noopener noreferrer">
-            Browse on Google Drive
-          </a>
-        ) : null}
+        <EditableText
+          tag="p"
+          className="conf-paper"
+          dir="rtl"
+          lang="ar"
+          value={item.paperTitle || ''}
+          onChange={(v) => onUpdate({ ...item, paperTitle: v })}
+        />
+        <a href={linkUrl} className="btn-outline-gold btn-sm" target="_blank" rel="noopener noreferrer">
+          {isDirectFile ? 'Download Paper' : 'Browse on Google Drive'}
+        </a>
         {isEditor && (
           <div className="conf-edit-actions">
             <button type="button" className="btn-outline-gold btn-sm" onClick={() => pdfRef.current?.click()}>
@@ -95,6 +87,7 @@ export default function ConferencesSection({ data, driveAssets }) {
   const { isEditor } = useAuth();
   const { updateContent } = useContent();
   const folderUrl = resolveSectionFolderUrl(driveAssets, 'conferences');
+  const items = data?.items ?? [];
 
   const updateField = (field, value) => {
     updateContent((prev) => ({
@@ -105,9 +98,9 @@ export default function ConferencesSection({ data, driveAssets }) {
 
   const updateItem = (index, item) => {
     updateContent((prev) => {
-      const items = [...prev.conferences.items];
-      items[index] = item;
-      return { ...prev, conferences: { ...prev.conferences, items } };
+      const nextItems = [...prev.conferences.items];
+      nextItems[index] = item;
+      return { ...prev, conferences: { ...prev.conferences, items: nextItems } };
     });
   };
 
@@ -123,7 +116,7 @@ export default function ConferencesSection({ data, driveAssets }) {
           location: 'Location',
           year: '2024',
           paperTitle: '',
-          pdf: null
+          pdf: { driveFileId: '', filename: '' }
         }]
       }
     }));
@@ -168,16 +161,17 @@ export default function ConferencesSection({ data, driveAssets }) {
       />
 
       <div className="conf-timeline">
-        {data.items.map((item, i) => (
+        {items.map((item, i) => (
           <ConferenceCard
-            key={item.id}
+            key={item.id || `conf-${i}`}
             item={item}
             folderUrl={folderUrl}
+            driveAssets={driveAssets}
             onUpdate={(updated) => updateItem(i, updated)}
             onRemove={() => removeItem(i)}
           />
         ))}
-        {data.items.length === 0 && !isEditor && (
+        {items.length === 0 && !isEditor && (
           <p className="empty-state" dir="rtl" lang="ar">لا توجد مؤتمرات مسجلة حتى الآن.</p>
         )}
       </div>

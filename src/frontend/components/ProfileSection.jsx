@@ -3,7 +3,7 @@ import EditableText from './EditableText';
 import { useAuth } from '../hooks/useAuth';
 import { useContent } from '../hooks/useContent';
 import { uploadFile } from '../utils/api';
-import { resolvePdfUrl, resolveSectionFolderUrl } from '../utils/driveUrls';
+import { resolvePdfOrFolderUrl, resolveSectionFolderUrl } from '../utils/driveUrls';
 
 export default function ProfileSection({ data, driveAssets }) {
   const { isEditor } = useAuth();
@@ -91,11 +91,10 @@ export default function ProfileSection({ data, driveAssets }) {
 
       <div className="cv-download-wrap">
         {(() => {
-          const cvUrl = resolvePdfUrl(data.cvPdf);
-          const cvFolderUrl = resolveSectionFolderUrl(driveAssets, 'cv') || driveAssets?.rootFolderUrl;
-          const href = cvUrl || cvFolderUrl;
+          const cvFolderUrl = resolveSectionFolderUrl(driveAssets, 'cv');
+          const { url: href, isDirectFile } = resolvePdfOrFolderUrl(data.cvPdf, cvFolderUrl, driveAssets);
 
-          return href ? (
+          return (
             <a href={href} className="btn-gold btn-cv" target="_blank" rel="noopener noreferrer">
               <EditableText
                 tag="span"
@@ -112,12 +111,8 @@ export default function ProfileSection({ data, driveAssets }) {
                 value={data.cvLabelEn}
                 onChange={(v) => updateProfile('cvLabelEn', v)}
               />
-              {!cvUrl && cvFolderUrl ? ' (Google Drive)' : ''}
+              {!isDirectFile ? ' (Google Drive)' : ''}
             </a>
-          ) : (
-            <span className="btn-gold btn-cv disabled">
-              {data.cvLabelAr} / {data.cvLabelEn}
-            </span>
           );
         })()}
         {isEditor && (
