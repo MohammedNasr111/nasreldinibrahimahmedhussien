@@ -721,6 +721,28 @@ main { overflow-x: hidden; }
   margin-bottom: 2rem;
 }
 
+.drive-folder-banner {
+  max-width: 900px;
+  margin: 0 auto 1.75rem;
+  padding: 1rem 1.25rem;
+  background: rgba(184, 150, 12, 0.08);
+  border: 1px solid rgba(184, 150, 12, 0.35);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.drive-folder-banner p {
+  margin: 0.25rem 0;
+  font-size: 0.92rem;
+  color: var(--navy);
+}
+
+.drive-folder-banner a {
+  color: var(--gold);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 /* ===== Buttons ===== */
 .btn-gold {
   display: inline-block;

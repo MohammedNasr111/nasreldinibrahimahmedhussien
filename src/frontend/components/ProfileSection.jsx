@@ -3,8 +3,9 @@ import EditableText from './EditableText';
 import { useAuth } from '../hooks/useAuth';
 import { useContent } from '../hooks/useContent';
 import { uploadFile } from '../utils/api';
+import { resolvePdfUrl, resolveSectionFolderUrl } from '../utils/driveUrls';
 
-export default function ProfileSection({ data }) {
+export default function ProfileSection({ data, driveAssets }) {
   const { isEditor } = useAuth();
   const { updateContent, showToast } = useContent();
   const cvInputRef = useRef(null);
@@ -21,7 +22,7 @@ export default function ProfileSection({ data }) {
     if (!file) return;
     try {
       const result = await uploadFile('pdfs', file);
-      updateProfile('cvPdf', { url: result.url, filename: result.filename });
+      updateProfile('cvPdf', { driveFileId: '', url: result.url, filename: result.filename });
       showToast('CV uploaded — click Save to persist');
     } catch (err) {
       showToast(err.message, true);
@@ -89,29 +90,36 @@ export default function ProfileSection({ data }) {
       </div>
 
       <div className="cv-download-wrap">
-        {data.cvPdf?.url ? (
-          <a href={data.cvPdf.url} className="btn-gold btn-cv" target="_blank" rel="noopener noreferrer">
-            <EditableText
-              tag="span"
-              dir="rtl"
-              lang="ar"
-              value={data.cvLabelAr}
-              onChange={(v) => updateProfile('cvLabelAr', v)}
-            />
-            {' / '}
-            <EditableText
-              tag="span"
-              dir="ltr"
-              lang="en"
-              value={data.cvLabelEn}
-              onChange={(v) => updateProfile('cvLabelEn', v)}
-            />
-          </a>
-        ) : (
-          <span className="btn-gold btn-cv disabled">
-            {data.cvLabelAr} / {data.cvLabelEn}
-          </span>
-        )}
+        {(() => {
+          const cvUrl = resolvePdfUrl(data.cvPdf);
+          const cvFolderUrl = resolveSectionFolderUrl(driveAssets, 'cv') || driveAssets?.rootFolderUrl;
+          const href = cvUrl || cvFolderUrl;
+
+          return href ? (
+            <a href={href} className="btn-gold btn-cv" target="_blank" rel="noopener noreferrer">
+              <EditableText
+                tag="span"
+                dir="rtl"
+                lang="ar"
+                value={data.cvLabelAr}
+                onChange={(v) => updateProfile('cvLabelAr', v)}
+              />
+              {' / '}
+              <EditableText
+                tag="span"
+                dir="ltr"
+                lang="en"
+                value={data.cvLabelEn}
+                onChange={(v) => updateProfile('cvLabelEn', v)}
+              />
+              {!cvUrl && cvFolderUrl ? ' (Google Drive)' : ''}
+            </a>
+          ) : (
+            <span className="btn-gold btn-cv disabled">
+              {data.cvLabelAr} / {data.cvLabelEn}
+            </span>
+          );
+        })()}
         {isEditor && (
           <div className="edit-only-inline">
             <button type="button" className="btn-outline-gold" onClick={() => cvInputRef.current?.click()}>

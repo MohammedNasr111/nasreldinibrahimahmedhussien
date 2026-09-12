@@ -1,22 +1,28 @@
 import React, { useState, useRef } from 'react';
 import EditableText from './EditableText';
 import EditableImage from './EditableImage';
+import DriveFolderBanner from './DriveFolderBanner';
 import { useAuth } from '../hooks/useAuth';
 import { useContent } from '../hooks/useContent';
 import { uploadFile, uid } from '../utils/api';
+import { resolveImageUrl, resolvePdfUrl, resolveSectionFolderUrl } from '../utils/driveUrls';
 
-function BookCard({ item, onUpdate, onRemove }) {
+const TAB_FOLDER_KEY = { books: 'books', articles: 'articles', research: 'research' };
+
+function BookCard({ item, onUpdate, onRemove, folderUrl }) {
   const { isEditor } = useAuth();
   const { showToast } = useContent();
   const coverRef = useRef(null);
   const pdfRef = useRef(null);
+  const coverSrc = resolveImageUrl(item.coverImage, item.coverDriveFileId);
+  const pdfUrl = resolvePdfUrl(item.pdf);
 
   const handleCover = async (e) => {
     const file = e.target.files?.[0];
     if (!file) return;
     try {
       const result = await uploadFile('images', file);
-      onUpdate({ ...item, coverImage: result.url });
+      onUpdate({ ...item, coverImage: result.url, coverDriveFileId: '' });
       showToast('Cover updated — click Save to persist');
     } catch (err) {
       showToast(err.message, true);
@@ -29,7 +35,10 @@ function BookCard({ item, onUpdate, onRemove }) {
     if (!file) return;
     try {
       const result = await uploadFile('pdfs', file);
-      onUpdate({ ...item, pdf: { url: result.url, filename: result.filename } });
+      onUpdate({
+        ...item,
+        pdf: { driveFileId: '', url: result.url, filename: result.filename }
+      });
       showToast('PDF uploaded — click Save to persist');
     } catch (err) {
       showToast(err.message, true);
@@ -40,17 +49,17 @@ function BookCard({ item, onUpdate, onRemove }) {
   return (
     <article className="book-card">
       <div className="book-cover">
-        {item.coverImage ? (
+        {coverSrc ? (
           <EditableImage
-            src={item.coverImage}
+            src={coverSrc}
             alt={item.titleAr}
-            onReplace={(url) => onUpdate({ ...item, coverImage: url })}
-            onRemove={() => onUpdate({ ...item, coverImage: null })}
+            onReplace={(url) => onUpdate({ ...item, coverImage: url, coverDriveFileId: '' })}
+            onRemove={() => onUpdate({ ...item, coverImage: null, coverDriveFileId: '' })}
           />
         ) : (
           <div className="pub-cover-placeholder">📚</div>
         )}
-        {isEditor && !item.coverImage && (
+        {isEditor && !coverSrc && (
           <button type="button" className="edit-only-btn" onClick={() => coverRef.current?.click()}>
             + Cover
           </button>
@@ -68,11 +77,15 @@ function BookCard({ item, onUpdate, onRemove }) {
         />
         <p className="book-author" dir="rtl" lang="ar">{item.authorAr || 'أ.د. نصر الدين إبراهيم أحمد حسين'}</p>
         {item.year && <p className="book-year" dir="ltr">{item.year}</p>}
-        {item.pdf?.url && (
-          <a href={item.pdf.url} className="btn-outline-gold btn-sm" target="_blank" rel="noopener noreferrer">
+        {pdfUrl ? (
+          <a href={pdfUrl} className="btn-outline-gold btn-sm" target="_blank" rel="noopener noreferrer">
             View / Download
           </a>
-        )}
+        ) : folderUrl ? (
+          <a href={folderUrl} className="btn-outline-gold btn-sm" target="_blank" rel="noopener noreferrer">
+            Browse on Google Drive
+          </a>
+        ) : null}
         {isEditor && (
           <div className="pub-edit-actions">
             <button type="button" className="btn-outline-gold btn-sm" onClick={() => pdfRef.current?.click()}>
@@ -87,17 +100,21 @@ function BookCard({ item, onUpdate, onRemove }) {
   );
 }
 
-function ArticleListCard({ item, onUpdate, onRemove }) {
+function ArticleListCard({ item, onUpdate, onRemove, folderUrl }) {
   const { isEditor } = useAuth();
   const { showToast } = useContent();
   const pdfRef = useRef(null);
+  const pdfUrl = resolvePdfUrl(item.pdf);
 
   const handlePdf = async (e) => {
     const file = e.target.files?.[0];
     if (!file) return;
     try {
       const result = await uploadFile('pdfs', file);
-      onUpdate({ ...item, pdf: { url: result.url, filename: result.filename } });
+      onUpdate({
+        ...item,
+        pdf: { driveFileId: '', url: result.url, filename: result.filename }
+      });
       showToast('PDF uploaded — click Save to persist');
     } catch (err) {
       showToast(err.message, true);
@@ -138,11 +155,15 @@ function ArticleListCard({ item, onUpdate, onRemove }) {
         )}
       </div>
       <div className="article-list-action">
-        {item.pdf?.url && (
-          <a href={item.pdf.url} className="btn-outline-gold btn-sm" target="_blank" rel="noopener noreferrer">
+        {pdfUrl ? (
+          <a href={pdfUrl} className="btn-outline-gold btn-sm" target="_blank" rel="noopener noreferrer">
             Download Article
           </a>
-        )}
+        ) : folderUrl ? (
+          <a href={folderUrl} className="btn-outline-gold btn-sm" target="_blank" rel="noopener noreferrer">
+            Browse on Google Drive
+          </a>
+        ) : null}
         {isEditor && (
           <div className="pub-edit-actions vertical">
             <button type="button" className="btn-outline-gold btn-sm" onClick={() => pdfRef.current?.click()}>
@@ -157,10 +178,12 @@ function ArticleListCard({ item, onUpdate, onRemove }) {
   );
 }
 
-export default function PublicationsSection({ data }) {
+export default function PublicationsSection({ data, driveAssets }) {
   const { isEditor } = useAuth();
   const { updateContent } = useContent();
   const [tab, setTab] = useState('books');
+  const folderKey = TAB_FOLDER_KEY[tab];
+  const folderUrl = resolveSectionFolderUrl(driveAssets, folderKey);
 
   const updatePub = (field, value) => {
     updateContent((prev) => ({
@@ -189,7 +212,14 @@ export default function PublicationsSection({ data }) {
 
   const addItem = (type) => {
     const templates = {
-      books: { titleAr: 'عنوان الكتاب', authorAr: 'أ.د. نصر الدين إبراهيم أحمد حسين', year: '', coverImage: null, pdf: null },
+      books: {
+        titleAr: 'عنوان الكتاب',
+        authorAr: 'أ.د. نصر الدين إبراهيم أحمد حسين',
+        year: '',
+        coverImage: null,
+        coverDriveFileId: '',
+        pdf: null
+      },
       articles: { titleAr: 'عنوان المقال', journal: 'اسم المجلة', year: '', pdf: null },
       research: { titleAr: 'عنوان البحث', journal: '', year: '', pdf: null }
     };
@@ -240,12 +270,20 @@ export default function PublicationsSection({ data }) {
         </button>
       </div>
 
+      <DriveFolderBanner
+        driveAssets={driveAssets}
+        sectionKey={folderKey}
+        labelAr="جميع ملفات هذا القسم على Google Drive"
+        labelEn="All files for this section are on Google Drive"
+      />
+
       {tab === 'books' ? (
         <div className="books-grid">
           {items.map((item, i) => (
             <BookCard
               key={item.id}
               item={item}
+              folderUrl={folderUrl}
               onUpdate={(updated) => updateItem('books', i, updated)}
               onRemove={() => removeItem('books', i)}
             />
@@ -257,6 +295,7 @@ export default function PublicationsSection({ data }) {
             <ArticleListCard
               key={item.id}
               item={item}
+              folderUrl={folderUrl}
               onUpdate={(updated) => updateItem(tab, i, updated)}
               onRemove={() => removeItem(tab, i)}
             />

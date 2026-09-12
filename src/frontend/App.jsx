@@ -33,10 +33,10 @@ function SiteContent() {
 
       <main>
         <HomeSection data={content.home} />
-        <ProfileSection data={content.profile} />
-        <PublicationsSection data={content.publications} />
-        <ConferencesSection data={content.conferences} />
-        <PhotosAwardsSection data={content.photosAwards} />
+        <ProfileSection data={content.profile} driveAssets={content.driveAssets} />
+        <PublicationsSection data={content.publications} driveAssets={content.driveAssets} />
+        <ConferencesSection data={content.conferences} driveAssets={content.driveAssets} />
+        <PhotosAwardsSection data={content.photosAwards} driveAssets={content.driveAssets} />
         <ContactSection data={content.contact} />
       </main>
 

@@ -1,20 +1,26 @@
 import React, { useRef } from 'react';
 import EditableText from './EditableText';
+import DriveFolderBanner from './DriveFolderBanner';
 import { useAuth } from '../hooks/useAuth';
 import { useContent } from '../hooks/useContent';
 import { uploadFile, uid } from '../utils/api';
+import { resolvePdfUrl, resolveSectionFolderUrl } from '../utils/driveUrls';
 
-function ConferenceCard({ item, onUpdate, onRemove }) {
+function ConferenceCard({ item, onUpdate, onRemove, folderUrl }) {
   const { isEditor } = useAuth();
   const { showToast } = useContent();
   const pdfRef = useRef(null);
+  const pdfUrl = resolvePdfUrl(item.pdf);
 
   const handlePdf = async (e) => {
     const file = e.target.files?.[0];
     if (!file) return;
     try {
       const result = await uploadFile('pdfs', file);
-      onUpdate({ ...item, pdf: { url: result.url, filename: result.filename } });
+      onUpdate({
+        ...item,
+        pdf: { driveFileId: '', url: result.url, filename: result.filename }
+      });
       showToast('PDF uploaded — click Save to persist');
     } catch (err) {
       showToast(err.message, true);
@@ -62,11 +68,15 @@ function ConferenceCard({ item, onUpdate, onRemove }) {
             onChange={(v) => onUpdate({ ...item, paperTitle: v })}
           />
         )}
-        {item.pdf?.url && (
-          <a href={item.pdf.url} className="btn-outline-gold btn-sm" target="_blank" rel="noopener noreferrer">
+        {pdfUrl ? (
+          <a href={pdfUrl} className="btn-outline-gold btn-sm" target="_blank" rel="noopener noreferrer">
             Download Paper
           </a>
-        )}
+        ) : folderUrl ? (
+          <a href={folderUrl} className="btn-outline-gold btn-sm" target="_blank" rel="noopener noreferrer">
+            Browse on Google Drive
+          </a>
+        ) : null}
         {isEditor && (
           <div className="conf-edit-actions">
             <button type="button" className="btn-outline-gold btn-sm" onClick={() => pdfRef.current?.click()}>
@@ -81,9 +91,10 @@ function ConferenceCard({ item, onUpdate, onRemove }) {
   );
 }
 
-export default function ConferencesSection({ data }) {
+export default function ConferencesSection({ data, driveAssets }) {
   const { isEditor } = useAuth();
   const { updateContent } = useContent();
+  const folderUrl = resolveSectionFolderUrl(driveAssets, 'conferences');
 
   const updateField = (field, value) => {
     updateContent((prev) => ({
@@ -149,11 +160,19 @@ export default function ConferencesSection({ data }) {
         />
       </div>
 
+      <DriveFolderBanner
+        driveAssets={driveAssets}
+        sectionKey="conferences"
+        labelAr="أوراق المؤتمرات على Google Drive"
+        labelEn="Conference papers are on Google Drive"
+      />
+
       <div className="conf-timeline">
         {data.items.map((item, i) => (
           <ConferenceCard
             key={item.id}
             item={item}
+            folderUrl={folderUrl}
             onUpdate={(updated) => updateItem(i, updated)}
             onRemove={() => removeItem(i)}
           />

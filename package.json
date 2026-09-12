@@ -10,7 +10,8 @@
     "build": "node node_modules/vite/bin/vite.js build",
     "start": "node src/backend/server.js",
     "preview": "node node_modules/vite/bin/vite.js preview",
-    "populate": "python scripts/run_populate.py"
+    "populate": "python scripts/run_populate.py",
+    "migrate-drive": "node scripts/migrate-to-drive.js"
   },
   "engines": {
     "node": "20.x"
