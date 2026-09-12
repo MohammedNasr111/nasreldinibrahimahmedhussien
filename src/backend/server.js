@@ -30,6 +30,7 @@ app.use(cookieSession({
 }));
 
 app.use('/assets', express.static(path.join(ROOT, 'assets')));
+app.use('/content-library', express.static(path.join(ROOT, 'content-library')));
 if (fs.existsSync(UPLOADS_DIR)) {
   app.use('/uploads', express.static(UPLOADS_DIR));
 }

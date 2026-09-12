@@ -5,7 +5,7 @@ import { useAuth } from '../hooks/useAuth';
 import { useContent } from '../hooks/useContent';
 import { uploadFile, uid } from '../utils/api';
 
-function PublicationCard({ item, type, onUpdate, onRemove }) {
+function BookCard({ item, onUpdate, onRemove }) {
   const { isEditor } = useAuth();
   const { showToast } = useContent();
   const coverRef = useRef(null);
@@ -38,8 +38,8 @@ function PublicationCard({ item, type, onUpdate, onRemove }) {
   };
 
   return (
-    <article className="pub-card">
-      <div className="pub-cover">
+    <article className="book-card">
+      <div className="book-cover">
         {item.coverImage ? (
           <EditableImage
             src={item.coverImage}
@@ -57,41 +57,96 @@ function PublicationCard({ item, type, onUpdate, onRemove }) {
         )}
         <input ref={coverRef} type="file" accept="image/*" hidden onChange={handleCover} />
       </div>
-      <div className="pub-body" dir="rtl" lang="ar">
+      <div className="book-body" dir="rtl" lang="ar">
         <EditableText
           tag="h4"
-          className="pub-title"
+          className="book-title"
           dir="rtl"
           lang="ar"
           value={item.titleAr}
           onChange={(v) => onUpdate({ ...item, titleAr: v })}
         />
-        {type === 'articles' && (
-          <EditableText
-            tag="p"
-            className="pub-journal"
-            dir="rtl"
-            lang="ar"
-            value={item.journal || ''}
-            onChange={(v) => onUpdate({ ...item, journal: v })}
-          />
-        )}
-        <EditableText
-          tag="p"
-          className="pub-year"
-          dir="ltr"
-          value={item.year || ''}
-          onChange={(v) => onUpdate({ ...item, year: v })}
-        />
+        <p className="book-author" dir="rtl" lang="ar">{item.authorAr || 'أ.د. نصر الدين إبراهيم أحمد حسين'}</p>
+        {item.year && <p className="book-year" dir="ltr">{item.year}</p>}
         {item.pdf?.url && (
           <a href={item.pdf.url} className="btn-outline-gold btn-sm" target="_blank" rel="noopener noreferrer">
-            Download / View
+            View / Download
           </a>
         )}
         {isEditor && (
           <div className="pub-edit-actions">
             <button type="button" className="btn-outline-gold btn-sm" onClick={() => pdfRef.current?.click()}>
               {item.pdf ? 'Replace PDF' : 'Upload PDF'}
+            </button>
+            <button type="button" className="btn-outline-danger btn-sm" onClick={onRemove}>Remove</button>
+            <input ref={pdfRef} type="file" accept=".pdf" hidden onChange={handlePdf} />
+          </div>
+        )}
+      </div>
+    </article>
+  );
+}
+
+function ArticleListCard({ item, onUpdate, onRemove }) {
+  const { isEditor } = useAuth();
+  const { showToast } = useContent();
+  const pdfRef = useRef(null);
+
+  const handlePdf = async (e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    try {
+      const result = await uploadFile('pdfs', file);
+      onUpdate({ ...item, pdf: { url: result.url, filename: result.filename } });
+      showToast('PDF uploaded — click Save to persist');
+    } catch (err) {
+      showToast(err.message, true);
+    }
+    e.target.value = '';
+  };
+
+  return (
+    <article className="article-list-card">
+      <div className="article-list-icon" aria-hidden="true">📄</div>
+      <div className="article-list-body" dir="rtl" lang="ar">
+        <EditableText
+          tag="h4"
+          className="article-list-title"
+          dir="rtl"
+          lang="ar"
+          value={item.titleAr}
+          onChange={(v) => onUpdate({ ...item, titleAr: v })}
+        />
+        {item.journal && (
+          <EditableText
+            tag="p"
+            className="article-list-journal"
+            dir="rtl"
+            lang="ar"
+            value={item.journal}
+            onChange={(v) => onUpdate({ ...item, journal: v })}
+          />
+        )}
+        {item.year && (
+          <EditableText
+            tag="p"
+            className="article-list-year"
+            dir="ltr"
+            value={item.year}
+            onChange={(v) => onUpdate({ ...item, year: v })}
+          />
+        )}
+      </div>
+      <div className="article-list-action">
+        {item.pdf?.url && (
+          <a href={item.pdf.url} className="btn-outline-gold btn-sm" target="_blank" rel="noopener noreferrer">
+            Download Article
+          </a>
+        )}
+        {isEditor && (
+          <div className="pub-edit-actions vertical">
+            <button type="button" className="btn-outline-gold btn-sm" onClick={() => pdfRef.current?.click()}>
+              {item.pdf ? 'Replace' : 'Upload'}
             </button>
             <button type="button" className="btn-outline-danger btn-sm" onClick={onRemove}>Remove</button>
             <input ref={pdfRef} type="file" accept=".pdf" hidden onChange={handlePdf} />
@@ -116,7 +171,7 @@ export default function PublicationsSection({ data }) {
 
   const updateItem = (type, index, item) => {
     updateContent((prev) => {
-      const list = [...prev.publications[type]];
+      const list = [...(prev.publications[type] || [])];
       list[index] = item;
       return { ...prev, publications: { ...prev.publications, [type]: list } };
     });
@@ -133,19 +188,21 @@ export default function PublicationsSection({ data }) {
   };
 
   const addItem = (type) => {
-    const newItem = type === 'books'
-      ? { id: uid(), titleAr: 'عنوان الكتاب', year: '2024', coverImage: null, pdf: null }
-      : { id: uid(), titleAr: 'عنوان المقال', journal: 'اسم المجلة', year: '2024', coverImage: null, pdf: null };
+    const templates = {
+      books: { titleAr: 'عنوان الكتاب', authorAr: 'أ.د. نصر الدين إبراهيم أحمد حسين', year: '', coverImage: null, pdf: null },
+      articles: { titleAr: 'عنوان المقال', journal: 'اسم المجلة', year: '', pdf: null },
+      research: { titleAr: 'عنوان البحث', journal: '', year: '', pdf: null }
+    };
     updateContent((prev) => ({
       ...prev,
       publications: {
         ...prev.publications,
-        [type]: [...prev.publications[type], newItem]
+        [type]: [...(prev.publications[type] || []), { id: uid(), ...templates[type] }]
       }
     }));
   };
 
-  const items = tab === 'books' ? data.books : data.articles;
+  const items = data[tab] || [];
 
   return (
     <section id="publications" className="section section-publications">
@@ -169,42 +226,47 @@ export default function PublicationsSection({ data }) {
       </div>
 
       <div className="tabs">
-        <button
-          type="button"
-          className={`tab-btn ${tab === 'books' ? 'active' : ''}`}
-          onClick={() => setTab('books')}
-        >
+        <button type="button" className={`tab-btn ${tab === 'books' ? 'active' : ''}`} onClick={() => setTab('books')}>
           <span dir="rtl" lang="ar">{data.booksTitleAr}</span>
           <span>{data.booksTitleEn}</span>
         </button>
-        <button
-          type="button"
-          className={`tab-btn ${tab === 'articles' ? 'active' : ''}`}
-          onClick={() => setTab('articles')}
-        >
+        <button type="button" className={`tab-btn ${tab === 'articles' ? 'active' : ''}`} onClick={() => setTab('articles')}>
           <span dir="rtl" lang="ar">{data.articlesTitleAr}</span>
           <span>{data.articlesTitleEn}</span>
         </button>
+        <button type="button" className={`tab-btn ${tab === 'research' ? 'active' : ''}`} onClick={() => setTab('research')}>
+          <span dir="rtl" lang="ar">{data.researchTitleAr || 'البحوث'}</span>
+          <span>{data.researchTitleEn || 'Research'}</span>
+        </button>
       </div>
 
-      <div className="card-grid">
-        {items.map((item, i) => (
-          <PublicationCard
-            key={item.id}
-            item={item}
-            type={tab}
-            onUpdate={(updated) => updateItem(tab, i, updated)}
-            onRemove={() => removeItem(tab, i)}
-          />
-        ))}
-        {items.length === 0 && !isEditor && (
-          <p className="empty-state" dir="rtl" lang="ar">لا توجد منشورات حتى الآن.</p>
-        )}
-      </div>
+      {tab === 'books' ? (
+        <div className="books-grid">
+          {items.map((item, i) => (
+            <BookCard
+              key={item.id}
+              item={item}
+              onUpdate={(updated) => updateItem('books', i, updated)}
+              onRemove={() => removeItem('books', i)}
+            />
+          ))}
+        </div>
+      ) : (
+        <div className="articles-list">
+          {items.map((item, i) => (
+            <ArticleListCard
+              key={item.id}
+              item={item}
+              onUpdate={(updated) => updateItem(tab, i, updated)}
+              onRemove={() => removeItem(tab, i)}
+            />
+          ))}
+        </div>
+      )}
 
       {isEditor && (
         <button type="button" className="btn-add" onClick={() => addItem(tab)}>
-          + Add {tab === 'books' ? 'Book' : 'Article'}
+          + Add {tab === 'books' ? 'Book' : tab === 'articles' ? 'Article' : 'Research'}
         </button>
       )}
     </section>

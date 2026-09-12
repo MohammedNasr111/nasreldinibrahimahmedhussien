@@ -6,7 +6,6 @@ const NAV_ITEMS = [
   { id: 'profile', en: 'Profile', ar: 'السيرة الذاتية' },
   { id: 'publications', en: 'Publications (Books & Articles)', ar: 'المنشورات العلمية (الكتب والمقالات)' },
   { id: 'conferences', en: 'Conferences', ar: 'المؤتمرات' },
-  { id: 'phd', en: 'PhD / Supervisor (Viva Chairperson)', ar: 'الإشراف الأكاديمي على الدكتوراه' },
   { id: 'photos', en: 'Photos & Awards', ar: 'الصور والجوائز' },
   { id: 'contact', en: 'Contact', ar: 'تواصل معنا' }
 ];

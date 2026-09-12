@@ -9,7 +9,8 @@
     "dev:client": "node node_modules/vite/bin/vite.js",
     "build": "node node_modules/vite/bin/vite.js build",
     "start": "node src/backend/server.js",
-    "preview": "node node_modules/vite/bin/vite.js preview"
+    "preview": "node node_modules/vite/bin/vite.js preview",
+    "populate": "python scripts/run_populate.py"
   },
   "engines": {
     "node": "20.x"
@@ -28,6 +29,11 @@
     "vite": "^6.0.3"
   },
   "devDependencies": {
-    "concurrently": "^9.1.0"
+    "canvas": "^3.2.3",
+    "concurrently": "^9.1.0",
+    "mammoth": "^1.12.3",
+    "pdf-parse": "^2.4.5",
+    "pdfjs-dist": "^6.3.289",
+    "tesseract.js": "^7.0.0"
   }
 }

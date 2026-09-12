@@ -12,9 +12,29 @@
     "sectionTitleAr": "نبذة عن الأستاذ الدكتور نصر الدين إبراهيم أحمد حسين",
     "sectionTitleEn": "Academic Profile",
     "biographyAr": "<p>الأستاذ الدكتور نصر الدين إبراهيم أحمد حسين هو أكاديمي سوداني بارز وأحد المتخصصين في اللغة العربية وآدابها، ويعمل في قسم اللغة العربية وآدابها بكلية معارف الوحي والعلوم الإنسانية (KIRKHS) في الجامعة الإسلامية العالمية بماليزيا (IIUM). وقد أسهم بصورة فاعلة في تطوير الدراسات العربية والإسلامية في ماليزيا لأكثر من ثلاثة عقود، من خلال التدريس والبحث العلمي والإشراف الأكاديمي والإدارة الجامعية.</p><p>وُلد الأستاذ الدكتور نصر الدين في الخرطوم، السودان، وحصل على درجة البكالوريوس في اللغة العربية من جامعة القاهرة. كما نال دبلوماً في اللسانيات العربية في السودان، ثم حصل على درجة الماجستير في اللغة العربية (تخصص الدراسات البلاغية الإسلامية) ودرجة الدكتوراه في اللغة العربية من جامعة الخرطوم.</p><p>التحق بالجامعة الإسلامية العالمية بماليزيا عام 1990 محاضراً في الأدب العربي والنقد الأدبي والدراسات البلاغية، وتدرج في المناصب الأكاديمية حتى أصبح أستاذاً في قسم اللغة العربية وآدابها. كما شغل منصب رئيس قسم اللغة العربية وآدابها، وعمل نائباً لعميد كلية معارف الوحي والعلوم الإنسانية خلال الفترة 2003--2011.</p><p>تتركز اهتماماته البحثية في الأدب الإسلامي، والنقد الأدبي، والبلاغة العربية، والدراسات القرآنية، وتعليم اللغة العربية، وإسلامية المعرفة في الأدب العربي. وقد نشر عشرات البحوث المحكمة في المجلات العلمية الدولية، وألّف العديد من الكتب والمراجع الأكاديمية، وأسهم في تحرير ونشر مؤلفات علمية من خلال دار نشر الجامعة الإسلامية العالمية بماليزيا (IIUM Press).</p><p>كما أشرف على عدد كبير من رسائل الماجستير والدكتوراه، وشارك ممتحناً ورئيساً للعديد من لجان المناقشة العلمية داخل الجامعة وخارجها، وقد صُنّف ضمن أبرز المشرفين على رسائل الدكتوراه في الجامعة الإسلامية العالمية بماليزيا وفق سجلات مركز الدراسات العليا بالجامعة.</p><p>ويُعرف الأستاذ الدكتور نصر الدين بإسهاماته في ترسيخ مفهوم الأدب الإسلامي وربطه بمنهج إسلامية المعرفة، حيث يُعد من أبرز الباحثين الذين أسهموا في تطوير هذا المجال داخل الجامعة الإسلامية العالمية بماليزيا وعلى المستوى الدولي، وله حضور علمي متميز في المؤتمرات والندوات والبرامج الأكاديمية المتخصصة.</p>",
-    "cvPdf": null,
+    "cvPdf": {
+      "url": "/content-library/cv/cv.pdf",
+      "filename": "CV-Prof-Nasr-2025.pdf"
+    },
     "cvLabelAr": "تحميل السيرة الذاتية",
-    "cvLabelEn": "Download CV"
+    "cvLabelEn": "Download CV",
+    "qualificationsHtml": "<ul class=\"profile-timeline\"><li>Ph.D.  field: Arabic Criticism &amp; Literature:1985. (University of Khartoum-Sudan)</li><li>MA.  field: Arabic Rhetoric:1982. (University of Khartoum-Sudan)</li><li>Dip. In Education:1980. (University of Khartoum-Sudan)</li><li>BA. Arabic Language &amp; Literature:1979. (Cairo University)</li></ul>",
+    "qualificationsTitleAr": "الشهادات العلمية",
+    "qualificationsTitleEn": "Academic Qualifications",
+    "positionsHtml": "<ul class=\"profile-timeline\"><li>Deputy Dean Academic Affairs: Centre for Postgraduate Studies, IIUM. 2007-2011.</li><li>Deputy Dean Student Affairs: Centre for Postgraduate Studies, IIUM. 2004-2007.</li><li>Acting Dean: Centre for Postgraduate Studies, IIUM. 2011-2012.</li><li>Head of Department (Arabic Language &amp; Literature), KIRKHS -IIUM 2018- 2019.</li><li>Editor-in-Chief, Journal of At-Tajdid, A Refereed Arabic Biannual Dec. 2019- Dec. 2022.</li><li>Appointment as Chairman of Al-Markaz Al- 'Arabi for Research and Consultancy, and Traning IIUM. 2016 - 2020</li><li>Appointment as Promotion Coordinator Committee, Dept. of Arabic Language and Literature Kull. of IRK &amp; HS.  IIUM. 2019-2020</li><li>Appointment as Postgraduate Coordinator, Dept. of Arabic Language and Literature Kull. of IRK &amp; HS.  IIUM. 2015-2017.</li><li>Appointment as a Member of the Student Disciplinary Committee for Academic Misconduct, IIUM. 2015-2016.</li><li>Appointment as Academic Advisor, Dept. of Arabic Language and Literature Kull. of IRK &amp; HS.  IIUM. 2011-2017.</li><li>Special Assist. to the Dean: Centre for Postgraduate Studies, IIUM. 2000-2003.</li><li>Amār for the co-curricular activity centre. 2005-2007.</li><li>Head of Arabic Department, 1992-1993.</li></ul>",
+    "positionsTitleAr": "التعيينات والمناصب الإدارية",
+    "positionsTitleEn": "Administrative Positions",
+    "researchInterests": [
+      "Criticism Studies.",
+      "History of Arabic Literature.",
+      "Modern Literature.",
+      "Comparative Literature Studies.",
+      "Modern Islamic Literature.",
+      "Rhetorical Studies.",
+      "ADMINISTRATIVE POSITION:"
+    ],
+    "researchTitleAr": "مجالات التخصص والاهتمامات البحثية",
+    "researchTitleEn": "Research Interests"
   },
   "publications": {
     "sectionTitleAr": "المنشورات العلمية",
@@ -23,33 +43,1735 @@
     "booksTitleEn": "Books",
     "articlesTitleAr": "المقالات العلمية",
     "articlesTitleEn": "Academic Articles",
-    "books": [],
-    "articles": []
+    "books": [
+      {
+        "id": "book-1789221162-4521",
+        "titleAr": "وجوه الإعجاز في الخطاب الأسلوبي والمعرفي للقرآن الكريم",
+        "authorAr": "أ.د. نصر الدين إبراهيم أحمد حسين",
+        "authorEn": "Prof. Dr. Nasr El Din Ibrahim Ahmed Hussein",
+        "year": "",
+        "coverImage": "/content-library/books/01/cover.png",
+        "pdf": {
+          "url": "/content-library/books/01/book.pdf",
+          "filename": "Book 1 - 270 page.pdf"
+        }
+      },
+      {
+        "id": "book-1789221162-3845",
+        "titleAr": "النقد المنهجي في كتب طبقات الشعراء",
+        "authorAr": "أ.د. نصر الدين إبراهيم أحمد حسين",
+        "authorEn": "Prof. Dr. Nasr El Din Ibrahim Ahmed Hussein",
+        "year": "",
+        "coverImage": "/content-library/books/02/cover.png",
+        "pdf": {
+          "url": "/content-library/books/02/book.pdf",
+          "filename": "Book 10 - 201 page.pdf"
+        }
+      },
+      {
+        "id": "book-1789221163-3384",
+        "titleAr": "مراجعات في النقد الأدبي القديم",
+        "authorAr": "أ.د. نصر الدين إبراهيم أحمد حسين",
+        "authorEn": "Prof. Dr. Nasr El Din Ibrahim Ahmed Hussein",
+        "year": "",
+        "coverImage": "/content-library/books/03/cover.png",
+        "pdf": {
+          "url": "/content-library/books/03/book.pdf",
+          "filename": "Book 11 - 194 page.pdf"
+        }
+      },
+      {
+        "id": "book-1789221163-4919",
+        "titleAr": "الأدب الإسلامي، الإطار والمنهج",
+        "authorAr": "أ.د. نصر الدين إبراهيم أحمد حسين",
+        "authorEn": "Prof. Dr. Nasr El Din Ibrahim Ahmed Hussein",
+        "year": "",
+        "coverImage": "/content-library/books/04/cover.png",
+        "pdf": {
+          "url": "/content-library/books/04/book.pdf",
+          "filename": "Book 12 - 362 page.pdf"
+        }
+      },
+      {
+        "id": "book-1789221164-3033",
+        "titleAr": "الأدب الإسلامي، دراسة نظرية وتطبيقية",
+        "authorAr": "أ.د. نصر الدين إبراهيم أحمد حسين",
+        "authorEn": "Prof. Dr. Nasr El Din Ibrahim Ahmed Hussein",
+        "year": "",
+        "coverImage": "/content-library/books/05/cover.png",
+        "pdf": {
+          "url": "/content-library/books/05/book.pdf",
+          "filename": "Book 13 - 377 page.pdf"
+        }
+      },
+      {
+        "id": "book-1789221164-1437",
+        "titleAr": "نحو إطار إسلامي للشعر العربي",
+        "authorAr": "أ.د. نصر الدين إبراهيم أحمد حسين",
+        "authorEn": "Prof. Dr. Nasr El Din Ibrahim Ahmed Hussein",
+        "year": "",
+        "coverImage": "/content-library/books/06/cover.png",
+        "pdf": {
+          "url": "/content-library/books/06/book.pdf",
+          "filename": "Book 14 - 256 page.pdf"
+        }
+      },
+      {
+        "id": "book-1789221164-2680",
+        "titleAr": "وجوه الإعجاز في الخطاب الأسلوبي والمعرفي للقرآن الكريم",
+        "authorAr": "أ.د. نصر الدين إبراهيم أحمد حسين",
+        "authorEn": "Prof. Dr. Nasr El Din Ibrahim Ahmed Hussein",
+        "year": "",
+        "coverImage": "/content-library/books/07/cover.png",
+        "pdf": {
+          "url": "/content-library/books/07/book.pdf",
+          "filename": "Book 2 - 204 page.pdf"
+        }
+      },
+      {
+        "id": "book-1789221165-9682",
+        "titleAr": "النقد في العصر الجاهلي بين الذاتية والموضوعية",
+        "authorAr": "أ.د. نصر الدين إبراهيم أحمد حسين",
+        "authorEn": "Prof. Dr. Nasr El Din Ibrahim Ahmed Hussein",
+        "year": "",
+        "coverImage": "/content-library/books/08/cover.png",
+        "pdf": {
+          "url": "/content-library/books/08/book.pdf",
+          "filename": "Book 3 - 176 page.pdf"
+        }
+      },
+      {
+        "id": "book-1789221165-5463",
+        "titleAr": "الخطاب البلاغي وعلاقته بالدرس القرآني والأدبي؛ دراسات بلاغية تحليلية",
+        "authorAr": "أ.د. نصر الدين إبراهيم أحمد حسين",
+        "authorEn": "Prof. Dr. Nasr El Din Ibrahim Ahmed Hussein",
+        "year": "",
+        "coverImage": "/content-library/books/09/cover.png",
+        "pdf": {
+          "url": "/content-library/books/09/book.pdf",
+          "filename": "Book 4 - 359 page.pdf"
+        }
+      },
+      {
+        "id": "book-1789221166-7800",
+        "titleAr": "مكانة أصحاب القدرات الخاصة في التدريس والأدب العربي",
+        "authorAr": "أ.د. نصر الدين إبراهيم أحمد حسين",
+        "authorEn": "Prof. Dr. Nasr El Din Ibrahim Ahmed Hussein",
+        "year": "",
+        "coverImage": "/content-library/books/10/cover.png",
+        "pdf": {
+          "url": "/content-library/books/10/book.pdf",
+          "filename": "Book 5 - 214 page.pdf"
+        }
+      },
+      {
+        "id": "book-1789221167-7298",
+        "titleAr": "إشكالية الالتزام الإسلامي في ضوء القصة العربية الحديثة: دراسة نقدية تحليلية",
+        "authorAr": "أ.د. نصر الدين إبراهيم أحمد حسين",
+        "authorEn": "Prof. Dr. Nasr El Din Ibrahim Ahmed Hussein",
+        "year": "",
+        "coverImage": "/content-library/books/11/cover.png",
+        "pdf": {
+          "url": "/content-library/books/11/book.pdf",
+          "filename": "Book 6 - 277 page.pdf"
+        }
+      },
+      {
+        "id": "book-1789221167-8572",
+        "titleAr": "الأدب الإسلامي، دراسة نظرية وتطبيقية",
+        "authorAr": "أ.د. نصر الدين إبراهيم أحمد حسين",
+        "authorEn": "Prof. Dr. Nasr El Din Ibrahim Ahmed Hussein",
+        "year": "",
+        "coverImage": "/content-library/books/12/cover.png",
+        "pdf": {
+          "url": "/content-library/books/12/book.pdf",
+          "filename": "Book 7 - 289 page.pdf"
+        }
+      },
+      {
+        "id": "book-1789221167-8819",
+        "titleAr": "الإمام عبد القاهر الجرجاني؛ حياته ومصادر ثقافته المعرفية",
+        "authorAr": "أ.د. نصر الدين إبراهيم أحمد حسين",
+        "authorEn": "Prof. Dr. Nasr El Din Ibrahim Ahmed Hussein",
+        "year": "",
+        "coverImage": "/content-library/books/13/cover.png",
+        "pdf": {
+          "url": "/content-library/books/13/book.pdf",
+          "filename": "Book 8 - 310 page.pdf"
+        }
+      },
+      {
+        "id": "book-1789221168-4441",
+        "titleAr": "النقد المنهجي في كتب طبقات الشعراء",
+        "authorAr": "أ.د. نصر الدين إبراهيم أحمد حسين",
+        "authorEn": "Prof. Dr. Nasr El Din Ibrahim Ahmed Hussein",
+        "year": "",
+        "coverImage": "/content-library/books/14/cover.png",
+        "pdf": {
+          "url": "/content-library/books/14/book.pdf",
+          "filename": "Book 9 - 296 page.pdf"
+        }
+      }
+    ],
+    "articles": [
+      {
+        "id": "article-1789221168-6208",
+        "titleAr": "BY ALI AL-MAMARI ً",
+        "journal": "IJASOS- International E-Journal of Advances in Social Sciences,",
+        "year": "20",
+        "pdf": {
+          "url": "/content-library/articles/001/document.pdf",
+          "filename": "المقاربة التاريخية لرواية بن سولع للكاتب علي المعمري.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-7300",
+        "titleAr": "تىظيف انُرصا ع ُانف",
+        "journal": "IJASOS- International E-Journal of Advances in Social Sciences,",
+        "year": "20",
+        "pdf": {
+          "url": "/content-library/articles/002/document.pdf",
+          "filename": "توظيف العناصر الفنية في رواية بن سولع للكاتب علي المعمري.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-1166",
+        "titleAr": "التأصيل مجلة فكرية فصلية محكمة",
+        "journal": "",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/articles/003/document.pdf",
+          "filename": "التأصيل مجلة فكرية فصلية محكمة.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-4397",
+        "titleAr": "الإطار البياني في تفسير القرآن الكريم بين الجرجاني والزمخشري",
+        "journal": "الرسالة مجلة أكاديمية سنوية محكمة بمركز الدراسات العليا بالجامعة الإسلامية العالمية بماليزيا",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/articles/004/document.pdf",
+          "filename": "الإطار البياني في تفسير القرآن الكريم بين الجرجاني والزمخشري.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-8854",
+        "titleAr": "الاتجاه الاجتماعي في الدراسات النقدية في الشعر الخليجي العربي الحديث",
+        "journal": "الرسالة مجلة أكاديمية سنوية محكمة بمركز الدراسات العليا بالجامعة الإسلامية العالمية بماليزيا",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/articles/005/document.pdf",
+          "filename": "الاتجاه الاجتماعي في الدراسات النقدية في الشعر الخليجي العربي الحديث.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-1340",
+        "titleAr": "تحليل فكرة النظم عند الإمام عبد القاهر الجرجاني",
+        "journal": "الرسالة مجلة أكاديمية سنوية محكمة بمركز الدراسات العليا بالجامعة الإسلامية العالمية بماليزيا",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/articles/006/document.pdf",
+          "filename": "تحليل فكرة النظم عند الإمام عبد القاهر الجرجاني.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-4022",
+        "titleAr": "مفهوم الأدب بين محمد قطب وسيد محمد نقيب العطاس دراسة نقدية تحليلية",
+        "journal": "الرسالة مجلة أكاديمية سنوية محكمة بمركز الدراسات العليا بالجامعة الإسلامية العالمية بماليزيا",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/articles/007/document.pdf",
+          "filename": "مفهوم الأدب بين محمد قطب وسيد محمد نقيب العطاس دراسة نقدية تحليلية.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-9756",
+        "titleAr": "المجلة العلمية للغة والثقافة مجلة دولية علمية محكمة",
+        "journal": "",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/articles/008/document.pdf",
+          "filename": "المجلة العلمية للغة والثقافة مجلة دولية علمية محكمة.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-5287",
+        "titleAr": "أثر الدلالات البلاغية في فهم النص القرآني",
+        "journal": "المنشورات المحكمة مجلة الإسلام في آسيا مجلة عالمية محكمة",
+        "year": "20",
+        "pdf": {
+          "url": "/content-library/articles/009/document.pdf",
+          "filename": "أثر الدلالات البلاغية في فهم النص القرآني.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-3928",
+        "titleAr": "مجلة اإلسالم في آسيا",
+        "journal": "المنشورات المحكمة مجلة الإسلام في آسيا مجلة عالمية محكمة",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/articles/010/document.pdf",
+          "filename": "الملامح الإسلامية في قصة (الجسر) دراسة وصفية وتحليلية.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-9082",
+        "titleAr": "ة الماليزية",
+        "journal": "المنشورات المحكمة مجلة الإسلام في آسيا مجلة عالمية محكمة",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/articles/011/document.pdf",
+          "filename": "ظاهرة التوازي في قصائد شوقي الوطنية دراسة وصفية تحليلية.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-9568",
+        "titleAr": "ملامح الثقافة الإسلامية في الشعر الملايوي بماليزيا",
+        "journal": "المنشورات المحكمة مجلة الإسلام في آسيا مجلة عالمية محكمة",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/articles/012/document.pdf",
+          "filename": "ملامح الثقافة الإسلامية في الشعر الملايوي بماليزيا.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-8554",
+        "titleAr": "اإلسالمي",
+        "journal": "المنشورات المحكمة مجلة التجديد",
+        "year": "19",
+        "pdf": {
+          "url": "/content-library/articles/013/document.pdf",
+          "filename": "الرواية التاريخية بين الموضوعية والفنية عند علي أحمد باكثير وجرجي زيدان.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-8775",
+        "titleAr": "اإلسالمي",
+        "journal": "المنشورات المحكمة مجلة التجديد",
+        "year": "19",
+        "pdf": {
+          "url": "/content-library/articles/014/document.pdf",
+          "filename": "الصورة الجزئية في أدب العودة في الشعر الفلسطيني المعاصر.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-5182",
+        "titleAr": "ﺼﺮ اﻟﺪﻳﻦ إﺑﺮاﻫﻴﻢ أﺣﻤﺪ ﺣﺴﻴﻦ *",
+        "journal": "المنشورات المحكمة مجلة التجديد",
+        "year": "19",
+        "pdf": {
+          "url": "/content-library/articles/015/document.pdf",
+          "filename": "القصة العربية في العصر الحديث بين الالتزام الإسلامي والإبداع دراسة وصفية تحليلية.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-7723",
+        "titleAr": "اإلسالمي",
+        "journal": "المنشورات المحكمة مجلة التجديد",
+        "year": "19",
+        "pdf": {
+          "url": "/content-library/articles/016/document.pdf",
+          "filename": "الملامح الإسلامية في شعر علي أحمد باكثير دراسة تحليلية نقدية.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-1599",
+        "titleAr": "اإلسالمي",
+        "journal": "المنشورات المحكمة مجلة التجديد",
+        "year": "19",
+        "pdf": {
+          "url": "/content-library/articles/017/document.pdf",
+          "filename": "الملامح الإسلامية في مسرحيات علي باكثير دراسة تحليلية.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-3692",
+        "titleAr": "المنهج التربوي الإسلامي في مواجهة تحديات العولمة",
+        "journal": "المنشورات المحكمة مجلة التجديد",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/articles/018/document.pdf",
+          "filename": "المنهج التربوي الإسلامي في مواجهة تحديات العولمة.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-2739",
+        "titleAr": "اإلسالمي",
+        "journal": "المنشورات المحكمة مجلة التجديد",
+        "year": "19",
+        "pdf": {
+          "url": "/content-library/articles/019/document.pdf",
+          "filename": "شاعرية الدلالات اللفظيه في قصيدة بهجة الدنيا لمؤيد حجازي.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-9498",
+        "titleAr": "اإلسالمي",
+        "journal": "المنشورات المحكمة مجلة التجديد",
+        "year": "19",
+        "pdf": {
+          "url": "/content-library/articles/020/document.pdf",
+          "filename": "ظاهرة الإيقاع الجارجي في قصائد شوقي الوطنية.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-9749",
+        "titleAr": "مفهوم الشعر في ضوء العقيدة",
+        "journal": "المنشورات المحكمة مجلة التجديد",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/articles/021/document.pdf",
+          "filename": "مفهوم الشعر في ضوء العقيدة.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-6704",
+        "titleAr": "اإلسالمي",
+        "journal": "المنشورات المحكمة مجلة التجديد",
+        "year": "19",
+        "pdf": {
+          "url": "/content-library/articles/022/document.pdf",
+          "filename": "مقاربات درامية في الهوية والعادات.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-4568",
+        "titleAr": "وال يعبر بالضرورة عن وجهة نظر املجلة",
+        "journal": "المنشورات المحكمة مجلة الدراسات اللغوية والأدبية",
+        "year": "20",
+        "pdf": {
+          "url": "/content-library/articles/023/document.pdf",
+          "filename": "أثر السمات المكانيةفي تشكيل الشخصية الروائية.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-2635",
+        "titleAr": "أدب العودة ومضامينه يف الشعر الفلسطيني",
+        "journal": "المنشورات المحكمة مجلة الدراسات اللغوية والأدبية",
+        "year": "19",
+        "pdf": {
+          "url": "/content-library/articles/024/document.pdf",
+          "filename": "أدب العودة ومضامينه في الشعر الفلسطيني.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-4917",
+        "titleAr": ":دراساتٌ لغويّة",
+        "journal": "المنشورات المحكمة مجلة الدراسات اللغوية والأدبية",
+        "year": "20",
+        "pdf": {
+          "url": "/content-library/articles/025/document.pdf",
+          "filename": "التناص الديني في شعر مانع سعيد العتيبة.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-3413",
+        "titleAr": "املوضوعية يف النقد اجلاهلي:",
+        "journal": "المنشورات المحكمة مجلة الدراسات اللغوية والأدبية",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/articles/026/document.pdf",
+          "filename": "الموضوعية في النقد الجاهلي قراءة في النص النقدي بين حكومة النابغة وأمّ جندب.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-6746",
+        "titleAr": "دراساتٌ أدبيّة:",
+        "journal": "المنشورات المحكمة مجلة الدراسات اللغوية والأدبية",
+        "year": "20",
+        "pdf": {
+          "url": "/content-library/articles/027/document.pdf",
+          "filename": "الوصف في المجاز العقلي القرآني ودلالاته.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-9424",
+        "titleAr": "جدليّة أسلمة األدب العربي: اإلشكاليّة واملفهىم",
+        "journal": "المنشورات المحكمة مجلة الدراسات اللغوية والأدبية",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/articles/028/document.pdf",
+          "filename": "جدلية أسلمة الأدب العربي الإشكاليّة والمفهوم.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-7700",
+        "titleAr": "دالالت ا جملاز املرسل يف شواهد قرآنيّة",
+        "journal": "المنشورات المحكمة مجلة الدراسات اللغوية والأدبية",
+        "year": "20",
+        "pdf": {
+          "url": "/content-library/articles/029/document.pdf",
+          "filename": "دلالات المجاز المرسل في شواهد قرآنية.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-8442",
+        "titleAr": "عبداهلل الطيّب شاعر التّراث: مكانته األدبيّة وظواهر لُغويّة يف  ديوانه",
+        "journal": "المنشورات المحكمة مجلة الدراسات اللغوية والأدبية",
+        "year": "20",
+        "pdf": {
+          "url": "/content-library/articles/030/document.pdf",
+          "filename": "عبدالله الطيب شاعر التراث.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-2880",
+        "titleAr": ":دراساتٌ أدبية",
+        "journal": "المنشورات المحكمة مجلة الدراسات اللغوية والأدبية",
+        "year": "19",
+        "pdf": {
+          "url": "/content-library/articles/031/document.pdf",
+          "filename": "عبدالله الطيب والصور البيانية في أشعاره دراسة وتحليل.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-6465",
+        "titleAr": "علم البديع وبالغته يف ضوء القرآن الكريم:",
+        "journal": "المنشورات المحكمة مجلة الدراسات اللغوية والأدبية",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/articles/032/document.pdf",
+          "filename": "علم البديع وبلاغته في ضوء القرآن الكريم دراسة بلاغية تحليلية.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-5460",
+        "titleAr": "دراساتٌ لغو",
+        "journal": "المنشورات المحكمة مجلة الدراسات اللغوية والأدبية",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/articles/033/document.pdf",
+          "filename": "مكانة المرأة وإسهاماتها في الأدب العربي القديم.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-4286",
+        "titleAr": "دراساتٌ أدب:يّة",
+        "journal": "المنشورات المحكمة مجلة الدراسات اللغوية والأدبية",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/articles/034/document.pdf",
+          "filename": "واقع القصة الإسلامية في العصر الحديث دراسة وصفية تحليلية.pdf"
+        }
+      },
+      {
+        "id": "article-1789221168-1164",
+        "titleAr": "مجلة الأثير",
+        "journal": "",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/articles/035/document.pdf",
+          "filename": "مجلة الأثير.pdf"
+        }
+      },
+      {
+        "id": "article-1789221169-1578",
+        "titleAr": "الإشارات البلاغية في القرآن الكريم علم البيان أنموذجاً",
+        "journal": "مجلة الدراسات العربية دورية علمية محكمة دار العلوم جامعة المنيا",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/articles/036/document.pdf",
+          "filename": "الإشارات البلاغية في القرآن الكريم علم البيان أنموذجاً.pdf"
+        }
+      },
+      {
+        "id": "article-1789221169-3071",
+        "titleAr": "بلاغة التقديم والتأخير عند الإمام عبد القاهر الجرجاني",
+        "journal": "مجلة الدراسات العربية دورية علمية محكمة دار العلوم جامعة المنيا",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/articles/037/document.pdf",
+          "filename": "بلاغة التقديم والتأخير عند الإمام عبد القاهر الجرجاني.pdf"
+        }
+      },
+      {
+        "id": "article-1789221169-7851",
+        "titleAr": "الةلغ  العربي  لألحباث",
+        "journal": "مجلة السر للأبحاث التخصصية، مجلة دوليّة محكمة",
+        "year": "20",
+        "pdf": {
+          "url": "/content-library/articles/038/document.pdf",
+          "filename": "الإشارات البلاغية ودلالاتها في القرآن الكريم.pdf"
+        }
+      },
+      {
+        "id": "article-1789221169-7840",
+        "titleAr": "جم ةل اللةلة اللربية البأاحث اللخصصصة",
+        "journal": "مجلة السر للأبحاث التخصصية، مجلة دوليّة محكمة",
+        "year": "20",
+        "pdf": {
+          "url": "/content-library/articles/039/document.pdf",
+          "filename": "التناص في قصص الشيخ علي الطنطاوي دراسة وصفية تحليلية.pdf"
+        }
+      },
+      {
+        "id": "article-1789221169-3990",
+        "titleAr": "مجلة الشارقة للعلوم الإنسانية والاجتماعية",
+        "journal": "",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/articles/040/document.pdf",
+          "filename": "مجلة الشارقة للعلوم الإنسانية والاجتماعية.pdf"
+        }
+      },
+      {
+        "id": "article-1789221169-1337",
+        "titleAr": "مجلة العلوم اإلنسانية واالجتماعية",
+        "journal": "مجلة العلوم الإنسانية والاجتماعية (AJSRP)",
+        "year": "20",
+        "pdf": {
+          "url": "/content-library/articles/041/document.pdf",
+          "filename": "قيمة الرحلات العمانية وخصائصها.pdf"
+        }
+      },
+      {
+        "id": "article-1789221169-9010",
+        "titleAr": "العولمة والبعد التربوي",
+        "journal": "مجلة اللغات والترجمة مجلة محكمة كلية الألسن جامعة المنيا",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/articles/042/document.pdf",
+          "filename": "العولمة والبعد التربوي.pdf"
+        }
+      },
+      {
+        "id": "article-1789221169-9364",
+        "titleAr": "الهوية التربوية الإسلامية مقاربة بالغرب في ضوء عصر العولمة",
+        "journal": "مجلة اللغات والترجمة مجلة محكمة كلية الألسن جامعة المنيا",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/articles/043/document.pdf",
+          "filename": "الهوية التربوية الإسلامية مقاربة بالغرب في ضوء عصر العولمة.pdf"
+        }
+      },
+      {
+        "id": "article-1789221169-7199",
+        "titleAr": "الأساليب  البلاغية وأثرها في فهم النص القرآني ودلالاته-  مجلة تفكر",
+        "journal": "مجلة تفكر مجلة محكمة تصدر عن معهدإسلام المعرفة (إمام) بجامعة الجزيرة بالسودان",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/articles/044/document.pdf",
+          "filename": "الأساليب  البلاغية وأثرها في فهم النص القرآني ودلالاته-  مجلة تفكر.pdf"
+        }
+      },
+      {
+        "id": "article-1789221169-2132",
+        "titleAr": "أثر الفكر الإسلامي في الأدب العربي قديماً وحديثاً",
+        "journal": "مجلة جامعة أمدرمان الإسلامية السودان",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/articles/045/document.pdf",
+          "filename": "أثر الفكر الإسلامي في الأدب العربي قديماً وحديثاً.pdf"
+        }
+      },
+      {
+        "id": "article-1789221169-3332",
+        "titleAr": "كلمة أدب مفهومها الإسلامي ومضمونها عبر العصور القديمة",
+        "journal": "مجلة جامعة أمدرمان الإسلامية السودان",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/articles/046/document.pdf",
+          "filename": "كلمة أدب مفهومها الإسلامي ومضمونها عبر العصور القديمة.pdf"
+        }
+      },
+      {
+        "id": "article-1789221169-6043",
+        "titleAr": "الإبداع اللغوي والبلاغي في أساليب القرآن الكريم ومعانيه",
+        "journal": "مجلة جرش الثقافية",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/articles/047/document.pdf",
+          "filename": "الإبداع اللغوي والبلاغي في أساليب القرآن الكريم ومعانيه.pdf"
+        }
+      },
+      {
+        "id": "article-1789221169-1780",
+        "titleAr": "فكرة النحو البلاغي في ضوء نظرية النظم للإمام عبد القاهر الجرجاني  مجلة كلية المعارف الجامعية",
+        "journal": "مجلة كليّة المعارف الجامعية مجلة دورية علمية محكمة جامعة",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/articles/048/document.pdf",
+          "filename": "فكرة النحو البلاغي في ضوء نظرية النظم للإمام عبد القاهر الجرجاني  مجلة كلية المعارف الجامعية.pdf"
+        }
+      },
+      {
+        "id": "article-1789221169-6235",
+        "titleAr": "نحو إطار إسلامي للقصة العربية الحديثة مجلة كلية المعارف الجامعية",
+        "journal": "مجلة كليّة المعارف الجامعية مجلة دورية علمية محكمة جامعة",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/articles/049/document.pdf",
+          "filename": "نحو إطار إسلامي للقصة العربية الحديثة مجلة كلية المعارف الجامعية.pdf"
+        }
+      },
+      {
+        "id": "article-1789221169-2213",
+        "titleAr": "أسوة حسنة",
+        "journal": "مقالات محكمة منشورة في مجلة الرسالة بكلية معارف الوحي والعلوم الإنسانية",
+        "year": "20",
+        "pdf": {
+          "url": "/content-library/articles/050/document.pdf",
+          "filename": "الأفكار والقضايا البارزة في رواية عمر يظهر في القدس لنجيب لكيلاني.pdf"
+        }
+      },
+      {
+        "id": "article-1789221169-1651",
+        "titleAr": "اإلعالمية في التراث اإلسالمي: دراسة",
+        "journal": "مقالات محكمة منشورة في مجلة الرسالة بكلية معارف الوحي والعلوم الإنسانية",
+        "year": "20",
+        "pdf": {
+          "url": "/content-library/articles/051/document.pdf",
+          "filename": "الإعلامية في التراث الإسلامي دراسة تطبيقية لنماذج نثرية من كتاب زهر الآداب وثمر الألباب للحصري القيرواني.pdf"
+        }
+      },
+      {
+        "id": "article-1789221169-3871",
+        "titleAr": "الشعر العريب يف خدمة اجملتمع واالقتصاد الوطين: شعراء والية أدماوا أمنوذجا",
+        "journal": "مقالات محكمة منشورة في مجلة الرسالة بكلية معارف الوحي والعلوم الإنسانية",
+        "year": "20",
+        "pdf": {
+          "url": "/content-library/articles/052/document.pdf",
+          "filename": "الشعر العربي في خدمة المجتمع والاقتصاد الوطني شعراء ولاية أدماوا أنموذجاً.pdf"
+        }
+      },
+      {
+        "id": "article-1789221169-3355",
+        "titleAr": "لقيم اإلسالميّة يف شعر الشّاعر الغيينّ حممّد األمني جايب : دراسة وصفية حتليلية",
+        "journal": "مقالات محكمة منشورة في مجلة الرسالة بكلية معارف الوحي والعلوم الإنسانية",
+        "year": "20",
+        "pdf": {
+          "url": "/content-library/articles/053/document.pdf",
+          "filename": "القيم الإسلامية في شعر الشاعر الغيني محمد الأمين جابي دراسة وصفية تحليلية.pdf"
+        }
+      }
+    ],
+    "researchTitleAr": "البحوث",
+    "researchTitleEn": "Research",
+    "research": [
+      {
+        "id": "research-1789221169-2442",
+        "titleAr": "أبعاد الشعر الوطني عند الشاعر الغيني محمد الأمين جابي-دراسة وصفية تحليلية",
+        "journal": "أبحاث محكّمة-النتاج العلمي في الدراسات الأدبية القديمة والحديثة",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/research/001/document.pdf",
+          "filename": "أبعاد الشعر الوطني عند الشاعر الغيني محمد الأمين جابي-دراسة وصفية تحليلية.pdf"
+        }
+      },
+      {
+        "id": "research-1789221169-8307",
+        "titleAr": "الإمام عبد القاهر -الجرجاني حياته ومؤلفاته",
+        "journal": "أبحاث محكّمة-النتاج العلمي في الدراسات الأدبية القديمة والحديثة",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/research/002/document.pdf",
+          "filename": "الإمام عبد القاهر -الجرجاني حياته ومؤلفاته.pdf"
+        }
+      },
+      {
+        "id": "research-1789221169-3749",
+        "titleAr": "ظاهرة التكرار ودلالاتها في قصائد شوقي الوطنية",
+        "journal": "أبحاث محكّمة-النتاج العلمي في الدراسات الأدبية القديمة والحديثة",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/research/003/document.pdf",
+          "filename": "ظاهرة التكرار ودلالاتها في قصائد شوقي الوطنية.pdf"
+        }
+      },
+      {
+        "id": "research-1789221169-9445",
+        "titleAr": "مراجعة كتاب النقد الأدبي وأصوله ومناهجه لسيد قطب",
+        "journal": "أبحاث محكّمة-النتاج العلمي في الدراسات الأدبية القديمة والحديثة",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/research/004/document.pdf",
+          "filename": "مراجعة كتاب النقد الأدبي وأصوله ومناهجه لسيد قطب.pdf"
+        }
+      },
+      {
+        "id": "research-1789221169-3728",
+        "titleAr": "مراجعة كتاب مدخل إلى مناهج النقد الأدبي المعاصر مع ملحق قاموس المصطلحات الأدبية للدكتور سمير حجازي",
+        "journal": "أبحاث محكّمة-النتاج العلمي في الدراسات الأدبية القديمة والحديثة",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/research/005/document.pdf",
+          "filename": "مراجعة كتاب مدخل إلى مناهج النقد الأدبي المعاصر مع ملحق قاموس المصطلحات الأدبية للدكتور سمير حجازي.pdf"
+        }
+      },
+      {
+        "id": "research-1789221169-8967",
+        "titleAr": "معجم الخطاب الديني في شعر أبي مسلم البهلاني",
+        "journal": "أبحاث محكّمة-النتاج العلمي في الدراسات الأدبية القديمة والحديثة",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/research/006/document.pdf",
+          "filename": "معجم الخطاب الديني في شعر أبي مسلم البهلاني.pdf"
+        }
+      },
+      {
+        "id": "research-1789221169-6484",
+        "titleAr": "مفهوم النُّور والظَّلام في التَّصور الإسلامي",
+        "journal": "أبحاث محكّمة-النتاج العلمي في الدراسات الأدبية القديمة والحديثة",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/research/007/document.pdf",
+          "filename": "مفهوم النُّور والظَّلام في التَّصور الإسلامي.pdf"
+        }
+      },
+      {
+        "id": "research-1789221169-8687",
+        "titleAr": "نظرية الإمام عبد القاهر الجرجاني النقدية في ضوء نقد وتحليل النص الشعري",
+        "journal": "أبحاث محكّمة-النتاج العلمي في الدراسات الأدبية القديمة والحديثة",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/research/008/document.pdf",
+          "filename": "نظرية الإمام عبد القاهر الجرجاني النقدية في ضوء نقد وتحليل النص الشعري.pdf"
+        }
+      },
+      {
+        "id": "research-1789221169-7704",
+        "titleAr": "إسهام الحديث النبوي الشرف في تذوق الفن البلاغي",
+        "journal": "",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/research/009/document.pdf",
+          "filename": "إسهام الحديث النبوي الشرف في تذوق الفن البلاغي.pdf"
+        }
+      },
+      {
+        "id": "research-1789221170-2810",
+        "titleAr": "أسلمة الأدب المفهوم والمقصد",
+        "journal": "استدامة تعليم اللغة العربية والآداب في ظل جائحة كورونا  رؤى وآفاق",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/research/010/document.pdf",
+          "filename": "أسلمة الأدب المفهوم والمقصد.pdf"
+        }
+      },
+      {
+        "id": "research-1789221170-2386",
+        "titleAr": "أنماط التكرار وفاعليته في قصائد البارودي الوطنية",
+        "journal": "استدامة تعليم اللغة العربية والآداب في ظل جائحة كورونا  رؤى وآفاق",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/research/011/document.pdf",
+          "filename": "أنماط التكرار وفاعليته في قصائد البارودي الوطنية.pdf"
+        }
+      },
+      {
+        "id": "research-1789221170-6506",
+        "titleAr": "الدلالات البلاغية في الحديث النبوي الشريف دراسة تحليلية بلاغية",
+        "journal": "استدامة تعليم اللغة العربية والآداب في ظل جائحة كورونا  رؤى وآفاق",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/research/012/document.pdf",
+          "filename": "الدلالات البلاغية في الحديث النبوي الشريف دراسة تحليلية بلاغية.pdf"
+        }
+      },
+      {
+        "id": "research-1789221170-3993",
+        "titleAr": "الانتحال في الأدب قراءة نقدية في ضوء كتاب طبقات فحول الشعراء لابن سلام الجمحي",
+        "journal": "",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/research/013/document.pdf",
+          "filename": "الانتحال في الأدب قراءة نقدية في ضوء كتاب طبقات فحول الشعراء لابن سلام الجمحي.pdf"
+        }
+      },
+      {
+        "id": "research-1789221170-5828",
+        "titleAr": "الشاعر أبوبكر بن عبدالله الأدماوي حياته وشعره دراسة وصفية تحليلية",
+        "journal": "",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/research/014/document.pdf",
+          "filename": "الشاعر أبوبكر بن عبدالله الأدماوي حياته وشعره دراسة وصفية تحليلية.pdf"
+        }
+      },
+      {
+        "id": "research-1789221170-9030",
+        "titleAr": "تصميم المناهج التربوية في ضوء الرؤيتين الغربية والإسلامية",
+        "journal": "",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/research/015/document.pdf",
+          "filename": "تصميم المناهج التربوية في ضوء الرؤيتين الغربية والإسلامية.pdf"
+        }
+      },
+      {
+        "id": "research-1789221170-2552",
+        "titleAr": "دقة لغة القرآن وتذوقه دراسة في النص القرآني على المستوى البلاغي",
+        "journal": "",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/research/016/document.pdf",
+          "filename": "دقة لغة القرآن وتذوقه دراسة في النص القرآني على المستوى البلاغي.pdf"
+        }
+      },
+      {
+        "id": "research-1789221170-7049",
+        "titleAr": "دور مكتبة الوزير جنيد في جمع مخطوطات علماء نيجيريا وكتابة البحوث العلمية والرسائل الجامعية",
+        "journal": "",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/research/017/document.pdf",
+          "filename": "دور مكتبة الوزير جنيد في جمع مخطوطات علماء نيجيريا وكتابة البحوث العلمية والرسائل الجامعية.pdf"
+        }
+      },
+      {
+        "id": "research-1789221170-9445",
+        "titleAr": "عبدالله الطيب شاعر التراث مكانته الأدبية وظواهر لغوية في شعره",
+        "journal": "",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/research/018/document.pdf",
+          "filename": "عبدالله الطيب شاعر التراث مكانته الأدبية وظواهر لغوية في شعره.pdf"
+        }
+      },
+      {
+        "id": "research-1789221170-7478",
+        "titleAr": "مفهوم الإسلامية في الأدب دراسة وموازنة",
+        "journal": "",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/research/019/document.pdf",
+          "filename": "مفهوم الإسلامية في الأدب دراسة وموازنة.pdf"
+        }
+      },
+      {
+        "id": "research-1789221170-3893",
+        "titleAr": "الحروف العربية وصعوبة نطقها عند المتكلمين بغيرها",
+        "journal": "مقاربات جديدة في اللغة والأدب",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/research/020/document.pdf",
+          "filename": "الحروف العربية وصعوبة نطقها عند المتكلمين بغيرها.pdf"
+        }
+      },
+      {
+        "id": "research-1789221170-9047",
+        "titleAr": "دور الأدب العربي في تهذيب الأخلاق والسلوكة الإنساني",
+        "journal": "مقاربات جديدة في اللغة والأدب",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/research/021/document.pdf",
+          "filename": "دور الأدب العربي في تهذيب الأخلاق والسلوكة الإنساني.pdf"
+        }
+      },
+      {
+        "id": "research-1789221170-3731",
+        "titleAr": "مقاييس الناقد في العصر الجاهلي",
+        "journal": "مقاربات جديدة في اللغة والأدب",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/research/022/document.pdf",
+          "filename": "مقاييس الناقد في العصر الجاهلي.pdf"
+        }
+      },
+      {
+        "id": "research-1789221170-7395",
+        "titleAr": "وجوه الإعجاز بين التفسير البياني والعلمي في القرآن الكريم دراسة لنماذج من آيات الذكر الحكيم",
+        "journal": "",
+        "year": "",
+        "pdf": {
+          "url": "/content-library/research/023/document.pdf",
+          "filename": "وجوه الإعجاز بين التفسير البياني والعلمي في القرآن الكريم دراسة لنماذج من آيات الذكر الحكيم.pdf"
+        }
+      }
+    ]
   },
   "conferences": {
     "sectionTitleAr": "المؤتمرات",
     "sectionTitleEn": "Conferences",
-    "items": []
-  },
-  "phdSupervision": {
-    "sectionTitleAr": "الإشراف الأكاديمي على الدكتوراه",
-    "sectionTitleEn": "PhD Supervision & Viva Chairperson",
-    "supervisorTitleAr": "المشرف الأكاديمي",
-    "supervisorTitleEn": "PhD Supervisor",
-    "vivaTitleAr": "رئيس لجنة المناقشة",
-    "vivaTitleEn": "Viva Chairperson",
-    "supervised": [],
-    "vivaChair": []
+    "items": [
+      {
+        "id": "conf-photo-1789221172-9524",
+        "nameAr": "مشاركة في مؤتمر علمي",
+        "nameEn": "Conference Participation",
+        "location": "IIUM, Malaysia",
+        "year": "2023",
+        "paperTitle": "",
+        "image": "/content-library/conferences/img-01/photo.jpg",
+        "pdf": null
+      },
+      {
+        "id": "conf-photo-1789221172-7951",
+        "nameAr": "مشاركة في مؤتمر علمي",
+        "nameEn": "Conference Participation",
+        "location": "IIUM, Malaysia",
+        "year": "2023",
+        "paperTitle": "",
+        "image": "/content-library/conferences/img-02/photo.jpg",
+        "pdf": null
+      },
+      {
+        "id": "conf-photo-1789221172-3328",
+        "nameAr": "مشاركة في مؤتمر علمي",
+        "nameEn": "Conference Participation",
+        "location": "IIUM, Malaysia",
+        "year": "2023",
+        "paperTitle": "",
+        "image": "/content-library/conferences/img-03/photo.jpg",
+        "pdf": null
+      },
+      {
+        "id": "conf-1789221170-4600",
+        "nameAr": "أثر الفكر الإسلامي في إسلاميّة الأدب",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "أثر الفكر الإسلامي في إسلاميّة الأدب",
+        "pdf": {
+          "url": "/content-library/conferences/001/paper.pdf",
+          "filename": "أثر الفكر الإسلامي في إسلاميّة الأدب.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221170-6556",
+        "nameAr": "إسهام الإمام عبد القاهر الجرجاني في تطوير الدرس البلاغي والنقدي وأثر منهجه في الدراسات الغربية الحديثة",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "إسهام الإمام عبد القاهر الجرجاني في تطوير الدرس البلاغي والنقدي وأثر منهجه في الدراسات الغربية الحديثة",
+        "pdf": {
+          "url": "/content-library/conferences/002/paper.pdf",
+          "filename": "إسهام الإمام عبد القاهر الجرجاني في تطوير الدرس البلاغي والنقدي وأثر منهجه في الدراسات الغربية الحديثة.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221170-8044",
+        "nameAr": "استثمار اللغة العربيّة في تذوّق بلاغة القرآن الكريم دراسة تحليلية لنماذج من الآيات القرآنية",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "استثمار اللغة العربيّة في تذوّق بلاغة القرآن الكريم دراسة تحليلية لنماذج من الآيات القرآنية",
+        "pdf": {
+          "url": "/content-library/conferences/003/paper.pdf",
+          "filename": "استثمار اللغة العربيّة في تذوّق بلاغة القرآن الكريم دراسة تحليلية لنماذج من الآيات القرآنية.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221170-5265",
+        "nameAr": "الأدب الإسلامي مفهومه ومقاصده",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "الأدب الإسلامي مفهومه ومقاصده",
+        "pdf": {
+          "url": "/content-library/conferences/004/paper.pdf",
+          "filename": "الأدب الإسلامي مفهومه ومقاصده.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221170-7879",
+        "nameAr": "الأدب في ضوء أسلمة المعرفة",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "الأدب في ضوء أسلمة المعرفة",
+        "pdf": {
+          "url": "/content-library/conferences/005/paper.pdf",
+          "filename": "الأدب في ضوء أسلمة المعرفة.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221170-7715",
+        "nameAr": "الإشارات البلاغيّة في الحديث النبوي الشريف وأثرها في تعليم اللغة العربية دراسة تحليلية",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "الإشارات البلاغيّة في الحديث النبوي الشريف وأثرها في تعليم اللغة العربية دراسة تحليلية",
+        "pdf": {
+          "url": "/content-library/conferences/006/paper.pdf",
+          "filename": "الإشارات البلاغيّة في الحديث النبوي الشريف وأثرها في تعليم اللغة العربية دراسة تحليلية.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221170-7962",
+        "nameAr": "الإمام عبد القاهر الجرجاني حياته ومصادره المعرفيّة",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "الإمام عبد القاهر الجرجاني حياته ومصادره المعرفيّة",
+        "pdf": {
+          "url": "/content-library/conferences/007/paper.pdf",
+          "filename": "الإمام عبد القاهر الجرجاني حياته ومصادره المعرفيّة.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221171-3747",
+        "nameAr": "التوظيف الحضاري لكلمة أدب عبر العصور القديمة",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "التوظيف الحضاري لكلمة أدب عبر العصور القديمة",
+        "pdf": {
+          "url": "/content-library/conferences/008/paper.pdf",
+          "filename": "التوظيف الحضاري لكلمة أدب عبر العصور القديمة.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221171-8271",
+        "nameAr": "الدلالات البلاغية في الحديث النبوي الشريف دراسة تحليلية بلاغية",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "الدلالات البلاغية في الحديث النبوي الشريف دراسة تحليلية بلاغية",
+        "pdf": {
+          "url": "/content-library/conferences/009/paper.pdf",
+          "filename": "الدلالات البلاغية في الحديث النبوي الشريف دراسة تحليلية بلاغية.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221171-8419",
+        "nameAr": "الرؤية الإسلاميّة للتربية  التعليمية مقارنة بالغرب في ضوء الحواجز والجسور",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "الرؤية الإسلاميّة للتربية  التعليمية مقارنة بالغرب في ضوء الحواجز والجسور",
+        "pdf": {
+          "url": "/content-library/conferences/010/paper.pdf",
+          "filename": "الرؤية الإسلاميّة للتربية  التعليمية مقارنة بالغرب في ضوء الحواجز والجسور.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221171-6732",
+        "nameAr": "القصة الإسلاميّة الحديثة بين الأصالة والتجديد، قراءة سردية في قصة عمر يظهر في القدس للأديب الإسلامي نجيب الكيلاني",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "القصة الإسلاميّة الحديثة بين الأصالة والتجديد، قراءة سردية في قصة عمر يظهر في القدس للأديب الإسلامي نجيب الكيلاني",
+        "pdf": {
+          "url": "/content-library/conferences/011/paper.pdf",
+          "filename": "القصة الإسلاميّة الحديثة بين الأصالة والتجديد، قراءة سردية في قصة عمر يظهر في القدس للأديب الإسلامي نجيب الكيلاني.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221171-9144",
+        "nameAr": "القصة العربية في العصر الحديث بين الالتزام الإسلامي والإبداع دراسة وصفيّة وتحليلية",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "القصة العربية في العصر الحديث بين الالتزام الإسلامي والإبداع دراسة وصفيّة وتحليلية",
+        "pdf": {
+          "url": "/content-library/conferences/012/paper.pdf",
+          "filename": "القصة العربية في العصر الحديث بين الالتزام الإسلامي والإبداع دراسة وصفيّة وتحليلية.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221171-5895",
+        "nameAr": "المرأة المسلمة ودورها في المجتمع",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "المرأة المسلمة ودورها في المجتمع",
+        "pdf": {
+          "url": "/content-library/conferences/013/paper.pdf",
+          "filename": "المرأة المسلمة ودورها في المجتمع.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221171-8623",
+        "nameAr": "المفهوم الإسلامي للأدب العربي عبر العصور القديمة",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "المفهوم الإسلامي للأدب العربي عبر العصور القديمة",
+        "pdf": {
+          "url": "/content-library/conferences/014/paper.pdf",
+          "filename": "المفهوم الإسلامي للأدب العربي عبر العصور القديمة.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221171-7814",
+        "nameAr": "انتشار اللغة العربية وثقافتها في نيجيريا- ولاية كنو نموذجاً",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "انتشار اللغة العربية وثقافتها في نيجيريا- ولاية كنو نموذجاً",
+        "pdf": {
+          "url": "/content-library/conferences/015/paper.pdf",
+          "filename": "انتشار اللغة العربية وثقافتها في نيجيريا- ولاية كنو نموذجاً.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221171-6382",
+        "nameAr": "تحكيم مجلة مركز الدراسات العليا",
+        "nameEn": "",
+        "location": "تحكيم مجلة الرسالة ( CPS.)",
+        "year": "",
+        "paperTitle": "تحكيم مجلة مركز الدراسات العليا",
+        "pdf": {
+          "url": "/content-library/conferences/016/paper.pdf",
+          "filename": "تحكيم مجلة مركز الدراسات العليا.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221171-4972",
+        "nameAr": "دقّة لغة القرآن وتذوّقها دراسة في النص القرآني على المستوى البلاغي",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "دقّة لغة القرآن وتذوّقها دراسة في النص القرآني على المستوى البلاغي",
+        "pdf": {
+          "url": "/content-library/conferences/017/paper.pdf",
+          "filename": "دقّة لغة القرآن وتذوّقها دراسة في النص القرآني على المستوى البلاغي.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221171-2617",
+        "nameAr": "دور الأدب العربي في تهذيب الأخلاق والسلوك الإنساني",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "دور الأدب العربي في تهذيب الأخلاق والسلوك الإنساني",
+        "pdf": {
+          "url": "/content-library/conferences/018/paper.pdf",
+          "filename": "دور الأدب العربي في تهذيب الأخلاق والسلوك الإنساني.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221171-5975",
+        "nameAr": "دور مكتبة الوزير جنيدفي جمع مخطوطات علماء نيجيريا وكتابة البحوث العلميّة والرسائل الجامعيّة",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "دور مكتبة الوزير جنيدفي جمع مخطوطات علماء نيجيريا وكتابة البحوث العلميّة والرسائل الجامعيّة",
+        "pdf": {
+          "url": "/content-library/conferences/019/paper.pdf",
+          "filename": "دور مكتبة الوزير جنيدفي جمع مخطوطات علماء نيجيريا وكتابة البحوث العلميّة والرسائل الجامعيّة.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221171-3239",
+        "nameAr": "رئاسة اللجان في المؤتمرات",
+        "nameEn": "",
+        "location": "رئاسة لجان المؤتمرات العالميّة",
+        "year": "",
+        "paperTitle": "رئاسة اللجان في المؤتمرات",
+        "pdf": {
+          "url": "/content-library/conferences/020/paper.pdf",
+          "filename": "رئاسة اللجان في المؤتمرات.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221171-8248",
+        "nameAr": "صياغة المنهج التربوي الإسلامي في ضوء تحديات العولمة",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "صياغة المنهج التربوي الإسلامي في ضوء تحديات العولمة",
+        "pdf": {
+          "url": "/content-library/conferences/021/paper.pdf",
+          "filename": "صياغة المنهج التربوي الإسلامي في ضوء تحديات العولمة.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221171-2644",
+        "nameAr": "عبدالله الطيب والصور البيانية في أشعاره دراسة وتحليل",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "عبدالله الطيب والصور البيانية في أشعاره دراسة وتحليل",
+        "pdf": {
+          "url": "/content-library/conferences/022/paper.pdf",
+          "filename": "عبدالله الطيب والصور البيانية في أشعاره دراسة وتحليل.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221171-6068",
+        "nameAr": "علم البديع بين الإعجاز البلاغي وسر الإعجاز العلمي- دراسة تحليلة بلاغية في سورة الملك",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "علم البديع بين الإعجاز البلاغي وسر الإعجاز العلمي- دراسة تحليلة بلاغية في سورة الملك",
+        "pdf": {
+          "url": "/content-library/conferences/023/paper.pdf",
+          "filename": "علم البديع بين الإعجاز البلاغي وسر الإعجاز العلمي- دراسة تحليلة بلاغية في سورة الملك.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221171-2369",
+        "nameAr": "علم البديع بين التاريخ والفن في القرآن الكريم ، مع نموذج تحليل سورة الزلزلة",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "علم البديع بين التاريخ والفن في القرآن الكريم ، مع نموذج تحليل سورة الزلزلة",
+        "pdf": {
+          "url": "/content-library/conferences/024/paper.pdf",
+          "filename": "علم البديع بين التاريخ والفن في القرآن الكريم ، مع نموذج تحليل سورة الزلزلة.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221171-2867",
+        "nameAr": "قراءة في النص النقدي بين حكومة النابغة الذبياني وحكومة أمّ جندب في ضوء المعارضين والمؤيدين للحكومة",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "قراءة في النص النقدي بين حكومة النابغة الذبياني وحكومة أمّ جندب في ضوء المعارضين والمؤيدين للحكومة",
+        "pdf": {
+          "url": "/content-library/conferences/025/paper.pdf",
+          "filename": "قراءة في النص النقدي بين حكومة النابغة الذبياني وحكومة أمّ جندب في ضوء المعارضين والمؤيدين للحكومة.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221171-1330",
+        "nameAr": "مشكلات تعليم اللغة العربيّة عقبات وحلول",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "مشكلات تعليم اللغة العربيّة عقبات وحلول",
+        "pdf": {
+          "url": "/content-library/conferences/026/paper.pdf",
+          "filename": "مشكلات تعليم اللغة العربيّة عقبات وحلول.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221171-2579",
+        "nameAr": "مشكلات تعليم اللغة العربيّة في ضوء تحديات العولمة",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "مشكلات تعليم اللغة العربيّة في ضوء تحديات العولمة",
+        "pdf": {
+          "url": "/content-library/conferences/027/paper.pdf",
+          "filename": "مشكلات تعليم اللغة العربيّة في ضوء تحديات العولمة.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221171-2776",
+        "nameAr": "مفهوم الإسلاميّة في الأدب دراسة وموازنة",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "مفهوم الإسلاميّة في الأدب دراسة وموازنة",
+        "pdf": {
+          "url": "/content-library/conferences/028/paper.pdf",
+          "filename": "مفهوم الإسلاميّة في الأدب دراسة وموازنة.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221171-3309",
+        "nameAr": "مفهوم الرؤية التربوية- دراسة مقارنة بين الإسلام والغرب",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "مفهوم الرؤية التربوية- دراسة مقارنة بين الإسلام والغرب",
+        "pdf": {
+          "url": "/content-library/conferences/029/paper.pdf",
+          "filename": "مفهوم الرؤية التربوية- دراسة مقارنة بين الإسلام والغرب.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221171-2947",
+        "nameAr": "مكانة المرأة  ودورها في الأدب العربي في العصور القديمة",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "مكانة المرأة  ودورها في الأدب العربي في العصور القديمة",
+        "pdf": {
+          "url": "/content-library/conferences/030/paper.pdf",
+          "filename": "مكانة المرأة  ودورها في الأدب العربي في العصور القديمة.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221171-2067",
+        "nameAr": "موقع الأدبيات من الإسلاميّة ومناهج الدراسة الجامعية",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "موقع الأدبيات من الإسلاميّة ومناهج الدراسة الجامعية",
+        "pdf": {
+          "url": "/content-library/conferences/031/paper.pdf",
+          "filename": "موقع الأدبيات من الإسلاميّة ومناهج الدراسة الجامعية.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221171-9856",
+        "nameAr": "نظرية النظم ومنهج تفسير القرآن عند الإمام عبد القاهر الجرجاني",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "نظرية النظم ومنهج تفسير القرآن عند الإمام عبد القاهر الجرجاني",
+        "pdf": {
+          "url": "/content-library/conferences/032/paper.pdf",
+          "filename": "نظرية النظم ومنهج تفسير القرآن عند الإمام عبد القاهر الجرجاني.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221172-4585",
+        "nameAr": "نقد المذاهب الأدبية الغربية في ضوء الرؤية الأدبية الإسلاميّة",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "نقد المذاهب الأدبية الغربية في ضوء الرؤية الأدبية الإسلاميّة",
+        "pdf": {
+          "url": "/content-library/conferences/033/paper.pdf",
+          "filename": "نقد المذاهب الأدبية الغربية في ضوء الرؤية الأدبية الإسلاميّة.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221172-1939",
+        "nameAr": "واقع القصة الإسلامية في العصر الحديث دراسة وصفيّة تحليلية",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "واقع القصة الإسلامية في العصر الحديث دراسة وصفيّة تحليلية",
+        "pdf": {
+          "url": "/content-library/conferences/034/paper.pdf",
+          "filename": "واقع القصة الإسلامية في العصر الحديث دراسة وصفيّة تحليلية.pdf"
+        }
+      },
+      {
+        "id": "conf-1789221172-6373",
+        "nameAr": "وجوه الإعجاز بين التفسير البياني والعلمي في القرآن الكريم دراسة لنماذج من آيات الذكر الحكيم (2)",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "وجوه الإعجاز بين التفسير البياني والعلمي في القرآن الكريم دراسة لنماذج من آيات الذكر الحكيم (2)",
+        "pdf": {
+          "url": "/content-library/conferences/035/paper.pdf",
+          "filename": "وجوه الإعجاز بين التفسير البياني والعلمي في القرآن الكريم دراسة لنماذج من آيات الذكر الحكيم (2).pdf"
+        }
+      },
+      {
+        "id": "conf-1789221172-6400",
+        "nameAr": "وجوه الإعجاز بين التفسير البياني والعلمي في القرآن الكريم دراسة لنماذج من آيات الذكر الحكيم",
+        "nameEn": "",
+        "location": "International Islamic University Malaysia",
+        "year": "",
+        "paperTitle": "وجوه الإعجاز بين التفسير البياني والعلمي في القرآن الكريم دراسة لنماذج من آيات الذكر الحكيم",
+        "pdf": {
+          "url": "/content-library/conferences/036/paper.pdf",
+          "filename": "وجوه الإعجاز بين التفسير البياني والعلمي في القرآن الكريم دراسة لنماذج من آيات الذكر الحكيم.pdf"
+        }
+      }
+    ]
   },
   "photosAwards": {
-    "sectionTitleAr": "آليات (الصور والجوائز)",
+    "sectionTitleAr": "الصور والجوائز",
     "sectionTitleEn": "Photos & Awards",
     "photosTitleAr": "معرض الصور",
     "photosTitleEn": "Photo Gallery",
     "awardsTitleAr": "الجوائز والتكريمات",
     "awardsTitleEn": "Awards & Recognition",
-    "photos": [],
-    "awards": []
+    "photos": [
+      {
+        "id": "photo-1789221176-2847",
+        "url": "/content-library/photos/001/photo.jpg",
+        "caption": "13907167_10154571661009610_8434435444445416260_n(1)"
+      },
+      {
+        "id": "photo-1789221176-7194",
+        "url": "/content-library/photos/002/photo.jpg",
+        "caption": "140817-4059"
+      },
+      {
+        "id": "photo-1789221176-6517",
+        "url": "/content-library/photos/003/photo.jpg",
+        "caption": "20221203_123614"
+      },
+      {
+        "id": "photo-1789221176-5767",
+        "url": "/content-library/photos/004/photo.jpg",
+        "caption": "20221203_124447"
+      },
+      {
+        "id": "photo-1789221176-7308",
+        "url": "/content-library/photos/005/photo.jpg",
+        "caption": "20221203_131822"
+      },
+      {
+        "id": "photo-1789221176-4394",
+        "url": "/content-library/photos/006/photo.jpg",
+        "caption": "20221203_132724"
+      },
+      {
+        "id": "photo-1789221176-4159",
+        "url": "/content-library/photos/007/photo.jpg",
+        "caption": "20221218_215638"
+      },
+      {
+        "id": "photo-1789221176-4354",
+        "url": "/content-library/photos/008/photo.jpg",
+        "caption": "20230703_173714"
+      },
+      {
+        "id": "photo-1789221176-5287",
+        "url": "/content-library/photos/009/photo.jpg",
+        "caption": "20230723_115412"
+      },
+      {
+        "id": "photo-1789221176-1571",
+        "url": "/content-library/photos/010/photo.jpg",
+        "caption": "20230812_153147"
+      },
+      {
+        "id": "photo-1789221176-4583",
+        "url": "/content-library/photos/011/photo.jpg",
+        "caption": "20230814_110217"
+      },
+      {
+        "id": "photo-1789221176-7995",
+        "url": "/content-library/photos/012/photo.jpg",
+        "caption": "20230817_012718"
+      },
+      {
+        "id": "photo-1789221176-3874",
+        "url": "/content-library/photos/013/photo.jpg",
+        "caption": "20230817_012740"
+      },
+      {
+        "id": "photo-1789221176-1349",
+        "url": "/content-library/photos/014/photo.jpg",
+        "caption": "20231125_090415"
+      },
+      {
+        "id": "photo-1789221176-5889",
+        "url": "/content-library/photos/015/photo.jpg",
+        "caption": "994698_10152149652974610_1654885668_n"
+      },
+      {
+        "id": "photo-1789221176-6004",
+        "url": "/content-library/photos/016/photo.jpg",
+        "caption": "CamScanner 12-28-2024 14.33_2_page-0001"
+      },
+      {
+        "id": "photo-1789221176-5384",
+        "url": "/content-library/photos/017/photo.jpg",
+        "caption": "CamScanner 12-28-2024 14.33_3_page-0001"
+      },
+      {
+        "id": "photo-1789221176-8015",
+        "url": "/content-library/photos/018/photo.jpg",
+        "caption": "CamScanner 12-28-2024 14.33_4_page-0001"
+      },
+      {
+        "id": "photo-1789221176-5772",
+        "url": "/content-library/photos/019/photo.jpg",
+        "caption": "IBRAHIM=2_page-0001"
+      },
+      {
+        "id": "photo-1789221176-6580",
+        "url": "/content-library/photos/020/photo.jpg",
+        "caption": "IMG-20171021-WA0010"
+      },
+      {
+        "id": "photo-1789221176-8480",
+        "url": "/content-library/photos/021/photo.jpg",
+        "caption": "IMG-20230215-WA0024 (1)"
+      },
+      {
+        "id": "photo-1789221176-9438",
+        "url": "/content-library/photos/022/photo.jpg",
+        "caption": "IMG-20241227-WA0001"
+      },
+      {
+        "id": "photo-1789221176-9164",
+        "url": "/content-library/photos/023/photo.jpg",
+        "caption": "IMG-20241227-WA0003"
+      },
+      {
+        "id": "photo-1789221176-8240",
+        "url": "/content-library/photos/024/photo.jpg",
+        "caption": "IMG-20241227-WA0150"
+      },
+      {
+        "id": "photo-1789221176-7805",
+        "url": "/content-library/photos/025/photo.jpg",
+        "caption": "IMG-20241227-WA0156"
+      },
+      {
+        "id": "photo-1789221176-6844",
+        "url": "/content-library/photos/026/photo.jpg",
+        "caption": "IMG-20250210-WA0039"
+      },
+      {
+        "id": "photo-1789221176-6308",
+        "url": "/content-library/photos/027/photo.jpg",
+        "caption": "IMG-20251026-WA0049"
+      },
+      {
+        "id": "photo-1789221176-2909",
+        "url": "/content-library/photos/028/photo.jpg",
+        "caption": "PICTURE (30)"
+      },
+      {
+        "id": "photo-1789221176-8875",
+        "url": "/content-library/photos/029/photo.jpg",
+        "caption": "Picture (18)"
+      },
+      {
+        "id": "photo-1789221176-9724",
+        "url": "/content-library/photos/030/photo.jpg",
+        "caption": "Picture (24)"
+      },
+      {
+        "id": "photo-1789221176-1040",
+        "url": "/content-library/photos/031/photo.jpg",
+        "caption": "أحمد إبراهيم=1"
+      },
+      {
+        "id": "photo-1789221176-3189",
+        "url": "/content-library/photos/032/photo.jpg",
+        "caption": "صورة القاضية فريد بالقصر_page-0001"
+      },
+      {
+        "id": "photo-1789221176-4160",
+        "url": "/content-library/photos/033/photo.jpg",
+        "caption": "صورة بروف نصرالدين_page-0001"
+      },
+      {
+        "id": "photo-1789221176-2142",
+        "url": "/content-library/photos/034/photo.jpg",
+        "caption": "صورة توفيق بدوي"
+      },
+      {
+        "id": "photo-1789221176-5026",
+        "url": "/content-library/photos/035/photo.jpg",
+        "caption": "صورة خليفة وعزيز_page-0001"
+      },
+      {
+        "id": "photo-1789221176-9593",
+        "url": "/content-library/photos/036/photo.jpg",
+        "caption": "نصر وماجدة ورئيس القضاء السوداني )الزاكي)_page-0001"
+      }
+    ],
+    "awards": [
+      {
+        "id": "award-1789221172-3642",
+        "nameAr": "3",
+        "body": "جوائز وتكريمات أكاديمية",
+        "year": "",
+        "image": "/content-library/awards/001/file.jpg"
+      },
+      {
+        "id": "award-1789221172-6216",
+        "nameAr": "الجوائز التقديرية",
+        "body": "الشهادت العلميّة والجوائز التقديرية",
+        "year": "",
+        "image": "/content-library/awards/002/preview.png"
+      },
+      {
+        "id": "award-1789221172-1744",
+        "nameAr": "الدرجات العلميّة والتعينات الإدارية",
+        "body": "الشهادت العلميّة والجوائز التقديرية",
+        "year": "",
+        "image": "/content-library/awards/003/preview.png"
+      },
+      {
+        "id": "award-1789221173-9884",
+        "nameAr": "المسابقة الدوليّة في السيرة النبوية",
+        "body": "الشهادت العلميّة والجوائز التقديرية",
+        "year": "",
+        "image": "/content-library/awards/004/preview.png"
+      },
+      {
+        "id": "award-1789221173-4518",
+        "nameAr": "تكريم الجامعة فيما يتعلق بالبرامج العلميّة",
+        "body": "الشهادت العلميّة والجوائز التقديرية",
+        "year": "",
+        "image": "/content-library/awards/005/preview.png"
+      },
+      {
+        "id": "award-1789221173-7481",
+        "nameAr": "تكريم على مستوى الجامعة فيما يتعلق بالبحث العلمي",
+        "body": "الشهادت العلميّة والجوائز التقديرية",
+        "year": "",
+        "image": "/content-library/awards/006/preview.png"
+      },
+      {
+        "id": "award-1789221173-5318",
+        "nameAr": "شهادة تكريمية على مستوى الجامعة",
+        "body": "الشهادت العلميّة والجوائز التقديرية",
+        "year": "",
+        "image": "/content-library/awards/007/preview.png"
+      },
+      {
+        "id": "award-1789221173-2694",
+        "nameAr": "تكريم الجامعة على مستوى خدمات الكليّة",
+        "body": "تكريم مركز البحوث لمؤلفاتي بالجامعة الإسلاميّة العالميّة بماليزيا",
+        "year": "",
+        "image": "/content-library/awards/008/preview.png"
+      },
+      {
+        "id": "award-1789221174-1847",
+        "nameAr": "تكريم الجامعة في مجال البحوث العلميّة",
+        "body": "تكريم مركز البحوث لمؤلفاتي بالجامعة الإسلاميّة العالميّة بماليزيا",
+        "year": "",
+        "image": "/content-library/awards/009/preview.png"
+      },
+      {
+        "id": "award-1789221174-9477",
+        "nameAr": "تكريم مركز البحوث بالجامعة لكتاب وجوه الإعجاز",
+        "body": "تكريم مركز البحوث لمؤلفاتي بالجامعة الإسلاميّة العالميّة بماليزيا",
+        "year": "",
+        "image": "/content-library/awards/010/preview.png"
+      },
+      {
+        "id": "award-1789221174-6883",
+        "nameAr": "تكريم مركز البحوث كتاب النقد المنهجي",
+        "body": "تكريم مركز البحوث لمؤلفاتي بالجامعة الإسلاميّة العالميّة بماليزيا",
+        "year": "",
+        "image": "/content-library/awards/011/preview.png"
+      },
+      {
+        "id": "award-1789221175-5697",
+        "nameAr": "تكريم مركز البحوث لكتاب إشكاليّة الالتزام الإسلامي",
+        "body": "تكريم مركز البحوث لمؤلفاتي بالجامعة الإسلاميّة العالميّة بماليزيا",
+        "year": "",
+        "image": "/content-library/awards/012/preview.png"
+      },
+      {
+        "id": "award-1789221175-1703",
+        "nameAr": "تكريم مركز البحوث لكتاب الأدب الإسلامي الإطار والمنهج",
+        "body": "تكريم مركز البحوث لمؤلفاتي بالجامعة الإسلاميّة العالميّة بماليزيا",
+        "year": "",
+        "image": "/content-library/awards/013/preview.png"
+      },
+      {
+        "id": "award-1789221175-5298",
+        "nameAr": "تكريم مركز البحوث لكتاب الأدب الإسلامي دراسة نظرية وتطبيقية",
+        "body": "تكريم مركز البحوث لمؤلفاتي بالجامعة الإسلاميّة العالميّة بماليزيا",
+        "year": "",
+        "image": "/content-library/awards/014/preview.png"
+      },
+      {
+        "id": "award-1789221175-1963",
+        "nameAr": "تكريم مركز البحوث لكتاب النقد في العصر الجاهلي",
+        "body": "تكريم مركز البحوث لمؤلفاتي بالجامعة الإسلاميّة العالميّة بماليزيا",
+        "year": "",
+        "image": "/content-library/awards/015/preview.png"
+      },
+      {
+        "id": "award-1789221175-7460",
+        "nameAr": "تكريم مركز البحوث لكتاب لكتاب الأسلوب",
+        "body": "تكريم مركز البحوث لمؤلفاتي بالجامعة الإسلاميّة العالميّة بماليزيا",
+        "year": "",
+        "image": "/content-library/awards/016/preview.png"
+      },
+      {
+        "id": "award-1789221176-4938",
+        "nameAr": "تكريم مركز البحوث لكتاب وجوه الإعجاز في الخطاب الأسلوبي والمعرفي",
+        "body": "تكريم مركز البحوث لمؤلفاتي بالجامعة الإسلاميّة العالميّة بماليزيا",
+        "year": "",
+        "image": "/content-library/awards/017/preview.png"
+      },
+      {
+        "id": "award-1789221176-5075",
+        "nameAr": "شهادات تقديرية للكتب المنشورة",
+        "body": "شهادات تقديرية",
+        "year": "",
+        "image": "/content-library/awards/018/preview.png"
+      },
+      {
+        "id": "award-1789221176-7895",
+        "nameAr": "شهادات حضور المؤتمرات العالمية وورش العمل",
+        "body": "جوائز وتكريمات أكاديمية",
+        "year": "",
+        "image": "/content-library/awards/019/preview.png"
+      }
+    ]
   },
   "contact": {
     "sectionTitleAr": "تواصل معنا",

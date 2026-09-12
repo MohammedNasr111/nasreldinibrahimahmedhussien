@@ -1,8 +1,8 @@
-node_modules/
-dist/
-.env
-.env.local
-*.log
-.DS_Store
-uploads/*
-!uploads/.gitkeep
+﻿Research/
+academic articles/
+books in the website/
+conference/
+awards/
+content-library/
+*.traineddata
+*.doc

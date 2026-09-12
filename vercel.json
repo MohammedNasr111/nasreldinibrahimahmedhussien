@@ -5,6 +5,7 @@
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api" },
     { "source": "/assets/(.*)", "destination": "/api" },
+    { "source": "/content-library/(.*)", "destination": "/api" },
     { "source": "/uploads/(.*)", "destination": "/api" },
     { "source": "/((?!api/).*)", "destination": "/api" }
   ]

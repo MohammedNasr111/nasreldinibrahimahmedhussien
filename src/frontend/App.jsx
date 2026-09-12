@@ -9,7 +9,6 @@ import HomeSection from './components/HomeSection';
 import ProfileSection from './components/ProfileSection';
 import PublicationsSection from './components/PublicationsSection';
 import ConferencesSection from './components/ConferencesSection';
-import PhdSection from './components/PhdSection';
 import PhotosAwardsSection from './components/PhotosAwardsSection';
 import ContactSection from './components/ContactSection';
 
@@ -37,7 +36,6 @@ function SiteContent() {
         <ProfileSection data={content.profile} />
         <PublicationsSection data={content.publications} />
         <ConferencesSection data={content.conferences} />
-        <PhdSection data={content.phdSupervision} />
         <PhotosAwardsSection data={content.photosAwards} />
         <ContactSection data={content.contact} />
       </main>

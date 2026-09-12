@@ -24,6 +24,9 @@ function ConferenceCard({ item, onUpdate, onRemove }) {
 
   return (
     <article className="conf-card">
+      <div className="conf-timeline-marker" aria-hidden="true">
+        <span className="conf-dot" />
+      </div>
       <div className="conf-year">{item.year}</div>
       <div className="conf-body">
         <EditableText

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import GLightbox from 'glightbox';
 import 'glightbox/dist/css/glightbox.min.css';
 import EditableText from './EditableText';
@@ -10,14 +10,16 @@ import { uploadFile, uid } from '../utils/api';
 export default function PhotosAwardsSection({ data }) {
   const { isEditor } = useAuth();
   const { updateContent, showToast } = useContent();
+  const [tab, setTab] = useState('photos');
   const lightboxRef = useRef(null);
   const photoInputRef = useRef(null);
   const awardImageRef = useRef(null);
 
   useEffect(() => {
+    if (tab !== 'photos') return undefined;
     lightboxRef.current = GLightbox({ selector: '.glightbox' });
     return () => lightboxRef.current?.destroy();
-  }, [data.photos]);
+  }, [data.photos, tab]);
 
   const updateField = (field, value) => {
     updateContent((prev) => ({
@@ -118,110 +120,129 @@ export default function PhotosAwardsSection({ data }) {
         />
       </div>
 
-      <h3 className="subsection-title" dir="rtl" lang="ar">{data.photosTitleAr}</h3>
-      <p className="subsection-title-en">{data.photosTitleEn}</p>
-
-      <div className="photo-gallery">
-        {data.photos.map((photo, i) => (
-          <figure key={photo.id} className="gallery-item">
-            {!isEditor ? (
-              <a href={photo.url} className="glightbox" data-gallery="photos">
-                <img src={photo.url} alt={photo.caption || 'Gallery photo'} />
-              </a>
-            ) : (
-              <EditableImage
-                src={photo.url}
-                alt={photo.caption}
-                onReplace={(url) => updatePhoto(i, { ...photo, url })}
-                onRemove={() => removePhoto(i)}
-              />
-            )}
-            <EditableText
-              tag="figcaption"
-              className="gallery-caption"
-              dir="rtl"
-              lang="ar"
-              value={photo.caption || ''}
-              onChange={(v) => updatePhoto(i, { ...photo, caption: v })}
-            />
-          </figure>
-        ))}
+      <div className="tabs tabs-subsection">
+        <button type="button" className={`tab-btn ${tab === 'photos' ? 'active' : ''}`} onClick={() => setTab('photos')}>
+          <span dir="rtl" lang="ar">{data.photosTitleAr}</span>
+          <span>{data.photosTitleEn}</span>
+        </button>
+        <button type="button" className={`tab-btn ${tab === 'awards' ? 'active' : ''}`} onClick={() => setTab('awards')}>
+          <span dir="rtl" lang="ar">{data.awardsTitleAr}</span>
+          <span>{data.awardsTitleEn}</span>
+        </button>
       </div>
 
-      {isEditor && (
+      {tab === 'photos' ? (
         <>
-          <button type="button" className="btn-add" onClick={() => photoInputRef.current?.click()}>
-            + Add Photo
-          </button>
-          <input ref={photoInputRef} type="file" accept="image/*" hidden onChange={addPhoto} />
-        </>
-      )}
-
-      <h3 className="subsection-title" dir="rtl" lang="ar">{data.awardsTitleAr}</h3>
-      <p className="subsection-title-en">{data.awardsTitleEn}</p>
-
-      <div className="awards-grid">
-        {data.awards.map((award, i) => (
-          <article key={award.id} className="award-card">
-            {award.image && (
-              <EditableImage
-                src={award.image}
-                alt={award.nameAr}
-                onReplace={(url) => updateAward(i, { ...award, image: url })}
-                onRemove={() => updateAward(i, { ...award, image: null })}
-              />
-            )}
-            <EditableText
-              tag="h4"
-              className="award-name"
-              dir="rtl"
-              lang="ar"
-              value={award.nameAr}
-              onChange={(v) => updateAward(i, { ...award, nameAr: v })}
-            />
-            <EditableText
-              tag="p"
-              className="award-body"
-              dir="rtl"
-              lang="ar"
-              value={award.body}
-              onChange={(v) => updateAward(i, { ...award, body: v })}
-            />
-            <EditableText
-              tag="p"
-              className="award-year"
-              dir="ltr"
-              value={award.year}
-              onChange={(v) => updateAward(i, { ...award, year: v })}
-            />
-            {isEditor && (
-              <div className="award-edit-actions">
-                {!award.image && (
-                  <button
-                    type="button"
-                    className="btn-outline-gold btn-sm"
-                    onClick={() => {
-                      awardImageRef.current.dataset.index = i;
-                      awardImageRef.current.click();
-                    }}
-                  >
-                    Add Image
-                  </button>
+          <div className="photo-gallery">
+            {data.photos.map((photo, i) => (
+              <figure key={photo.id} className="gallery-item">
+                {!isEditor ? (
+                  <a href={photo.url} className="glightbox" data-gallery="photos">
+                    <img src={photo.url} alt={photo.caption || 'Gallery photo'} />
+                  </a>
+                ) : (
+                  <EditableImage
+                    src={photo.url}
+                    alt={photo.caption}
+                    onReplace={(url) => updatePhoto(i, { ...photo, url })}
+                    onRemove={() => removePhoto(i)}
+                  />
                 )}
-                <button type="button" className="btn-outline-danger btn-sm" onClick={() => removeAward(i)}>
-                  Remove
-                </button>
-              </div>
-            )}
-          </article>
-        ))}
-        {data.awards.length === 0 && !isEditor && (
-          <p className="empty-state" dir="rtl" lang="ar">لا توجد جوائز مسجلة حتى الآن.</p>
-        )}
-      </div>
+                <EditableText
+                  tag="figcaption"
+                  className="gallery-caption"
+                  dir="rtl"
+                  lang="ar"
+                  value={photo.caption || ''}
+                  onChange={(v) => updatePhoto(i, { ...photo, caption: v })}
+                />
+              </figure>
+            ))}
+          </div>
 
-      {isEditor && (
-        <button type="button" className="btn-add" onClick={addAward}>+ Add Award</button>
+          {isEditor && (
+            <>
+              <button type="button" className="btn-add" onClick={() => photoInputRef.current?.click()}>
+                + Add Photo
+              </button>
+              <input ref={photoInputRef} type="file" accept="image/*" hidden onChange={addPhoto} />
+            </>
+          )}
+        </>
+      ) : (
+        <>
+          <div className="awards-grid awards-grid-2col">
+            {data.awards.map((award, i) => (
+              <article key={award.id} className="award-card award-card-gold">
+                {award.image ? (
+                  <div className="award-image-wrap">
+                    <EditableImage
+                      src={award.image}
+                      alt={award.nameAr}
+                      onReplace={(url) => updateAward(i, { ...award, image: url })}
+                      onRemove={() => updateAward(i, { ...award, image: null })}
+                    />
+                  </div>
+                ) : (
+                  <div className="award-image-placeholder">🏆</div>
+                )}
+                <div className="award-card-body" dir="rtl" lang="ar">
+                  <EditableText
+                    tag="h4"
+                    className="award-name"
+                    dir="rtl"
+                    lang="ar"
+                    value={award.nameAr}
+                    onChange={(v) => updateAward(i, { ...award, nameAr: v })}
+                  />
+                  <EditableText
+                    tag="p"
+                    className="award-body"
+                    dir="rtl"
+                    lang="ar"
+                    value={award.body}
+                    onChange={(v) => updateAward(i, { ...award, body: v })}
+                  />
+                  {award.year && (
+                    <EditableText
+                      tag="p"
+                      className="award-year"
+                      dir="ltr"
+                      value={award.year}
+                      onChange={(v) => updateAward(i, { ...award, year: v })}
+                    />
+                  )}
+                </div>
+                {isEditor && (
+                  <div className="award-edit-actions">
+                    {!award.image && (
+                      <button
+                        type="button"
+                        className="btn-outline-gold btn-sm"
+                        onClick={() => {
+                          awardImageRef.current.dataset.index = i;
+                          awardImageRef.current.click();
+                        }}
+                      >
+                        Add Image
+                      </button>
+                    )}
+                    <button type="button" className="btn-outline-danger btn-sm" onClick={() => removeAward(i)}>
+                      Remove
+                    </button>
+                  </div>
+                )}
+              </article>
+            ))}
+            {data.awards.length === 0 && !isEditor && (
+              <p className="empty-state" dir="rtl" lang="ar">لا توجد جوائز مسجلة حتى الآن.</p>
+            )}
+          </div>
+
+          {isEditor && (
+            <button type="button" className="btn-add" onClick={addAward}>+ Add Award</button>
+          )}
+        </>
       )}
 
       <input

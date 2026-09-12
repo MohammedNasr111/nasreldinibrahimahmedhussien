@@ -29,6 +29,34 @@ export default function ProfileSection({ data }) {
     e.target.value = '';
   };
 
+  const updateResearchInterest = (index, value) => {
+    updateContent((prev) => {
+      const interests = [...(prev.profile.researchInterests || [])];
+      interests[index] = value;
+      return { ...prev, profile: { ...prev.profile, researchInterests: interests } };
+    });
+  };
+
+  const addResearchInterest = () => {
+    updateContent((prev) => ({
+      ...prev,
+      profile: {
+        ...prev.profile,
+        researchInterests: [...(prev.profile.researchInterests || []), 'New interest']
+      }
+    }));
+  };
+
+  const removeResearchInterest = (index) => {
+    updateContent((prev) => ({
+      ...prev,
+      profile: {
+        ...prev.profile,
+        researchInterests: prev.profile.researchInterests.filter((_, i) => i !== index)
+      }
+    }));
+  };
+
   return (
     <section id="profile" className="section section-profile">
       <div className="section-header">
@@ -98,6 +126,108 @@ export default function ProfileSection({ data }) {
           </div>
         )}
       </div>
+
+      {data.qualificationsHtml && (
+        <div className="profile-block">
+          <EditableText
+            tag="h3"
+            className="profile-block-title"
+            dir="rtl"
+            lang="ar"
+            value={data.qualificationsTitleAr || 'الشهادات العلمية'}
+            onChange={(v) => updateProfile('qualificationsTitleAr', v)}
+          />
+          <EditableText
+            tag="p"
+            className="profile-block-subtitle"
+            dir="ltr"
+            lang="en"
+            value={data.qualificationsTitleEn || 'Academic Qualifications'}
+            onChange={(v) => updateProfile('qualificationsTitleEn', v)}
+          />
+          <EditableText
+            className="profile-timeline-content"
+            dir="ltr"
+            lang="en"
+            value={data.qualificationsHtml}
+            onChange={(v) => updateProfile('qualificationsHtml', v)}
+          />
+        </div>
+      )}
+
+      {data.positionsHtml && (
+        <div className="profile-block">
+          <EditableText
+            tag="h3"
+            className="profile-block-title"
+            dir="rtl"
+            lang="ar"
+            value={data.positionsTitleAr || 'التعيينات والمناصب الإدارية'}
+            onChange={(v) => updateProfile('positionsTitleAr', v)}
+          />
+          <EditableText
+            tag="p"
+            className="profile-block-subtitle"
+            dir="ltr"
+            lang="en"
+            value={data.positionsTitleEn || 'Administrative Positions'}
+            onChange={(v) => updateProfile('positionsTitleEn', v)}
+          />
+          <EditableText
+            className="profile-timeline-content"
+            dir="ltr"
+            lang="en"
+            value={data.positionsHtml}
+            onChange={(v) => updateProfile('positionsHtml', v)}
+          />
+        </div>
+      )}
+
+      {data.researchInterests?.length > 0 && (
+        <div className="profile-block">
+          <EditableText
+            tag="h3"
+            className="profile-block-title"
+            dir="rtl"
+            lang="ar"
+            value={data.researchTitleAr || 'مجالات التخصص والاهتمامات البحثية'}
+            onChange={(v) => updateProfile('researchTitleAr', v)}
+          />
+          <EditableText
+            tag="p"
+            className="profile-block-subtitle"
+            dir="ltr"
+            lang="en"
+            value={data.researchTitleEn || 'Research Interests'}
+            onChange={(v) => updateProfile('researchTitleEn', v)}
+          />
+          <div className="research-tags">
+            {data.researchInterests.map((interest, i) => (
+              <span key={i} className="research-tag">
+                {isEditor ? (
+                  <>
+                    <EditableText
+                      tag="span"
+                      dir="ltr"
+                      lang="en"
+                      value={interest}
+                      onChange={(v) => updateResearchInterest(i, v)}
+                    />
+                    <button type="button" className="tag-remove" onClick={() => removeResearchInterest(i)} aria-label="Remove">×</button>
+                  </>
+                ) : (
+                  interest
+                )}
+              </span>
+            ))}
+          </div>
+          {isEditor && (
+            <button type="button" className="btn-outline-gold btn-sm" onClick={addResearchInterest}>
+              + Add Interest
+            </button>
+          )}
+        </div>
+      )}
     </section>
   );
 }
