@@ -5,8 +5,7 @@ const NAV_ITEMS = [
   { id: 'home', en: 'Home', ar: 'الرئيسية' },
   { id: 'profile', en: 'Profile', ar: 'السيرة الذاتية' },
   { id: 'publications', en: 'Publications (Books & Articles)', ar: 'المنشورات العلمية (الكتب والمقالات)' },
-  { id: 'conferences', en: 'Conferences', ar: 'المؤتمرات' },
-  { id: 'photos', en: 'Photos & Awards', ar: 'الصور والجوائز' },
+  { id: 'awards', en: 'Awards', ar: 'الجوائز والتكريمات' },
   { id: 'contact', en: 'Contact', ar: 'تواصل معنا' }
 ];
 

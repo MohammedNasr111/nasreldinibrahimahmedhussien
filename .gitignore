@@ -1,8 +1,21 @@
-﻿Research/
+﻿node_modules/
+dist/
+.env
+.env.local
+*.log
+.DS_Store
+uploads/*
+!uploads/.gitkeep
+
+# Large source folders (keep locally only)
+Research/
 academic articles/
 books in the website/
 conference/
 awards/
 content-library/
+content-library-blob-map.json
+media-blob-map.json
+site-content/
 *.traineddata
 *.doc

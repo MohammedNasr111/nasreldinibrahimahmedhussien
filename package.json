@@ -10,8 +10,10 @@
     "build": "node node_modules/vite/bin/vite.js build",
     "start": "node src/backend/server.js",
     "preview": "node node_modules/vite/bin/vite.js preview",
-    "populate": "python scripts/run_populate.py",
-    "migrate-drive": "node scripts/migrate-to-drive.js"
+    "phase3": "python scripts/apply_phase3.py",
+    "upload:blob": "node scripts/upload-to-blob.mjs",
+    "clear:blob": "node scripts/clear-blob.mjs",
+    "deploy:prepare": "python scripts/apply_phase3.py && node scripts/upload-to-blob.mjs"
   },
   "engines": {
     "node": "20.x"

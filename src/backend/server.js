@@ -30,7 +30,10 @@ app.use(cookieSession({
 }));
 
 app.use('/assets', express.static(path.join(ROOT, 'assets')));
-app.use('/content-library', express.static(path.join(ROOT, 'content-library')));
+app.use('/media/books', express.static(path.join(ROOT, 'books in the website')));
+app.use('/media/articles', express.static(path.join(ROOT, 'academic articles')));
+app.use('/media/awards', express.static(path.join(ROOT, 'awards')));
+app.use('/media/cv', express.static(path.join(ROOT, 'site-content', 'cv')));
 if (fs.existsSync(UPLOADS_DIR)) {
   app.use('/uploads', express.static(UPLOADS_DIR));
 }
