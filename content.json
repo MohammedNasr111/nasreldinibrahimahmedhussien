@@ -1292,6 +1292,28 @@
       }
     ]
   },
+  "research": {
+    "sectionTitleAr": "البحوث العلمية",
+    "sectionTitleEn": "Research",
+    "cardTitleAr": "تصفّح البحوث العلمية على Google Drive",
+    "cardTitleEn": "Browse our Research papers on Google Drive",
+    "descriptionAr": "يتضمن هذا المجلد البحوث والدراسات العلمية المحكمة.",
+    "descriptionEn": "This folder contains refereed research papers and academic studies.",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1SiEf3RgDK7aLWm2Ibg8RA6ou1l5mIuRM?usp=sharing",
+    "buttonLabelAr": "فتح مجلد Google Drive",
+    "buttonLabelEn": "Open Google Drive Folder"
+  },
+  "conferences": {
+    "sectionTitleAr": "المؤتمرات",
+    "sectionTitleEn": "Conferences",
+    "cardTitleAr": "تصفّح مواد المؤتمرات على Google Drive",
+    "cardTitleEn": "Browse Conference materials on Google Drive",
+    "descriptionAr": "يتضمن هذا المجلد أوراق المؤتمرات والمواد ذات الصلة.",
+    "descriptionEn": "This folder contains conference papers and related materials.",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1a-HnxW4UVcQOra2FZRmY0i7iPw6LLGaI?usp=sharing",
+    "buttonLabelAr": "فتح مجلد Google Drive",
+    "buttonLabelEn": "Open Google Drive Folder"
+  },
   "contact": {
     "sectionTitleAr": "تواصل معنا",
     "sectionTitleEn": "Contact Us"

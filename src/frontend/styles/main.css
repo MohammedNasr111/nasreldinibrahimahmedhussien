@@ -743,6 +743,86 @@ main { overflow-x: hidden; }
   text-decoration: underline;
 }
 
+.drive-link-card {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(184, 150, 12, 0.25);
+}
+
+.drive-link-card-icon {
+  display: block;
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.drive-link-card-title-ar {
+  font-family: var(--font-heading-ar);
+  font-size: 1.35rem;
+  color: var(--navy);
+  margin: 0 0 0.35rem;
+}
+
+.drive-link-card-title-en {
+  font-family: var(--font-body-en);
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  margin: 0 0 1rem;
+}
+
+.drive-link-card-desc,
+.drive-link-card-desc-en {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin: 0.35rem 0;
+  line-height: 1.6;
+}
+
+.drive-link-btn {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 1.5rem;
+  text-decoration: none;
+}
+
+.drive-link-url-edit {
+  display: block;
+  margin: 1.25rem 0 0.5rem;
+  text-align: left;
+}
+
+.drive-link-url-edit span {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  color: var(--navy);
+}
+
+.drive-link-url-edit input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(184, 150, 12, 0.4);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+}
+
+.drive-link-edit-labels {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
 /* ===== Buttons ===== */
 .btn-gold {
   display: inline-block;

@@ -8,6 +8,7 @@ import RichTextToolbar from './components/RichTextToolbar';
 import HomeSection from './components/HomeSection';
 import ProfileSection from './components/ProfileSection';
 import PublicationsSection from './components/PublicationsSection';
+import DriveFolderSection from './components/DriveFolderSection';
 import AwardsSection from './components/AwardsSection';
 import ContactSection from './components/ContactSection';
 
@@ -34,6 +35,16 @@ function SiteContent() {
         <HomeSection data={content.home} />
         <ProfileSection data={content.profile} />
         <PublicationsSection data={content.publications} />
+        <DriveFolderSection
+          sectionId="research"
+          contentKey="research"
+          data={content.research}
+        />
+        <DriveFolderSection
+          sectionId="conferences"
+          contentKey="conferences"
+          data={content.conferences}
+        />
         <AwardsSection data={content.awards} />
         <ContactSection data={content.contact} />
       </main>
